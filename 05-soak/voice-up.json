@@ -1,0 +1,21 @@
+{
+  "label": "soak-up",
+  "expected": 180000,
+  "received": 179998,
+  "lost": 2,
+  "loss_pct": 0.0011,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2601,
+  "one_way_ms_min": 0.0461,
+  "one_way_ms_p50": 0.1869,
+  "one_way_ms_p95": 0.3546,
+  "one_way_ms_p99": 1.839,
+  "one_way_ms_max": 65.3993,
+  "jitter_rfc3550_ms_final": 0.1049,
+  "jitter_rfc3550_ms_mean": 0.1807,
+  "jitter_rfc3550_ms_max": 9.0295,
+  "max_interarrival_gap_ms": 85.131,
+  "max_gap_start_ns": 1791709275067965564,
+  "max_gap_end_ns": 1791709275153096456
+}

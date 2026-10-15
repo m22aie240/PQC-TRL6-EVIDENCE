@@ -1,0 +1,63 @@
+{
+  "pcap": "/home/claude/bench/results/05-soak/gw-underlay-soak-handshakes.pcap",
+  "capture_span_s": 3509.0,
+  "client_endpoints": 20,
+  "establishments": {
+    "n": 20,
+    "mean": 23.71,
+    "min": 1.685,
+    "p50": 21.874,
+    "p95": 41.692,
+    "p99": 41.692,
+    "max": 44.038
+  },
+  "rekeys": {
+    "n": 580,
+    "mean": 3.756,
+    "min": 0.545,
+    "p50": 2.036,
+    "p95": 11.377,
+    "p99": 23.326,
+    "max": 33.266
+  },
+  "server_processing_ms_establish": {
+    "n": 20,
+    "mean": 20.747,
+    "min": 1.651,
+    "p50": 20.463,
+    "p95": 29.533,
+    "p99": 29.533,
+    "max": 29.627
+  },
+  "server_processing_ms_rekey": {
+    "n": 580,
+    "mean": 3.522,
+    "min": 0.509,
+    "p50": 1.879,
+    "p95": 11.256,
+    "p99": 22.419,
+    "max": 30.681
+  },
+  "initiations_unanswered": 0,
+  "handshake_attempts": 600,
+  "handshake_success_rate_pct": 100.0,
+  "initiation_message_bytes": [
+    4679,
+    4701,
+    4702
+  ],
+  "response_message_bytes": [
+    4641,
+    4642
+  ],
+  "initiation_fragments": [
+    4
+  ],
+  "response_fragments": [
+    4
+  ],
+  "packet_counts_by_type": {
+    "type1_c2s": 2400,
+    "type2_s2c": 2400
+  }
+}

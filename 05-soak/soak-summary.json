@@ -1,0 +1,143 @@
+{
+  "clients": 20,
+  "ping_tx": 70697,
+  "ping_rx": 70697,
+  "ping_loss_pct": 0.0,
+  "client_outages_ge_3s": 0,
+  "scheduled_rekeys_client_logs": 580,
+  "no_response_recoveries_client_logs": 0,
+  "handshakes_completed_gateway": 600,
+  "gave_up_handshakes": 0,
+  "rejected_initiations": 0,
+  "error_level_lines": 0,
+  "warn_level_lines": 0,
+  "dc_fetches": 120,
+  "dc_fetch_ok": 120,
+  "gateway_cpu_pct_mean": 2.83,
+  "gateway_cpu_pct_max": 10,
+  "gateway_rss_kb_start": 8312,
+  "gateway_rss_kb_end": 10696,
+  "gateway_rss_kb_max": 11452,
+  "per_client": {
+    "c1": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c2": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c3": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c4": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c5": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c6": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c7": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c8": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c9": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c10": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c11": {
+      "tx": 3534,
+      "rx": 3534,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c12": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c13": {
+      "tx": 3534,
+      "rx": 3534,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c14": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c15": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c16": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c17": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c18": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c19": {
+      "tx": 3535,
+      "rx": 3535,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    },
+    "c20": {
+      "tx": 3534,
+      "rx": 3534,
+      "max_consecutive_lost": 0,
+      "outages_ge_3s": 0
+    }
+  }
+}

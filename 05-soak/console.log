@@ -1,0 +1,86 @@
+2026-10-11T08:52:48.428Z  PHASE 5 soak start  clients=20  duration=60 min
+2026-10-11T08:52:51.346Z  clients up: 20 / 20
+2026-10-11T09:02:51.904Z  soak t+10 min: gateway 10680 kB, handshakes so far 100
+2026-10-11T09:12:51.912Z  soak t+20 min: gateway 10336 kB, handshakes so far 200
+2026-10-11T09:22:51.919Z  soak t+30 min: gateway 10600 kB, handshakes so far 300
+2026-10-11T09:32:51.926Z  soak t+40 min: gateway 10440 kB, handshakes so far 400
+2026-10-11T09:42:51.934Z  soak t+50 min: gateway 10872 kB, handshakes so far 500
+2026-10-11T09:52:51.942Z  soak t+60 min: gateway 10696 kB, handshakes so far 600
+2026-10-11T09:53:07.960Z  --- soak analysis
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+AttributeError: 'NoneType' object has no attribute 'group'
+{
+  "label": "soak-up",
+  "expected": 180000,
+  "received": 179998,
+  "lost": 2,
+  "loss_pct": 0.0011,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2601,
+  "one_way_ms_min": 0.0461,
+  "one_way_ms_p50": 0.1869,
+  "one_way_ms_p95": 0.3546,
+  "one_way_ms_p99": 1.839,
+  "one_way_ms_max": 65.3993,
+  "jitter_rfc3550_ms_final": 0.1049,
+  "jitter_rfc3550_ms_mean": 0.1807,
+  "jitter_rfc3550_ms_max": 9.0295,
+  "max_interarrival_gap_ms": 85.131,
+  "max_gap_start_ns": 1791709275067965564,
+  "max_gap_end_ns": 1791709275153096456
+}{
+  "label": "soak-down",
+  "expected": 180000,
+  "received": 179979,
+  "lost": 21,
+  "loss_pct": 0.0117,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2622,
+  "one_way_ms_min": 0.0465,
+  "one_way_ms_p50": 0.1894,
+  "one_way_ms_p95": 0.3502,
+  "one_way_ms_p99": 1.8915,
+  "one_way_ms_max": 74.3945,
+  "jitter_rfc3550_ms_final": 0.0897,
+  "jitter_rfc3550_ms_mean": 0.1857,
+  "jitter_rfc3550_ms_max": 8.7238,
+  "max_interarrival_gap_ms": 88.302,
+  "max_gap_start_ns": 1791709275064995611,
+  "max_gap_end_ns": 1791709275153297928
+}{
+ "client_endpoints": 20,
+ "establishments": {
+  "n": 20,
+  "mean": 23.71,
+  "min": 1.685,
+  "p50": 21.874,
+  "p95": 41.692,
+  "p99": 41.692,
+  "max": 44.038
+ },
+ "rekeys": {
+  "n": 580,
+  "mean": 3.756,
+  "min": 0.545,
+  "p50": 2.036,
+  "p95": 11.377,
+  "p99": 23.326,
+  "max": 33.266
+ },
+ "server_processing_ms_rekey": {
+  "n": 580,
+  "mean": 3.522,
+  "min": 0.509,
+  "p50": 1.879,
+  "p95": 11.256,
+  "p99": 22.419,
+  "max": 30.681
+ },
+ "handshake_success_rate_pct": 100.0,
+ "initiations_unanswered": 0,
+ "handshake_attempts": 600
+}
+2026-10-11T09:53:08.046Z  PHASE 5 done
