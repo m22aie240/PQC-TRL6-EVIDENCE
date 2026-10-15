@@ -1,0 +1,957 @@
+{
+ "rtt_unprotected-56B": {
+  "n": 500,
+  "mean": 0.025,
+  "median": 0.026,
+  "p95": 0.037,
+  "max": 0.137
+ },
+ "rtt_protected-56B": {
+  "n": 500,
+  "mean": 0.422,
+  "median": 0.264,
+  "p95": 0.793,
+  "max": 16.0
+ },
+ "rtt_unprotected-1200B": {
+  "n": 500,
+  "mean": 0.029,
+  "median": 0.029,
+  "p95": 0.04,
+  "max": 0.319
+ },
+ "rtt_protected-1200B": {
+  "n": 500,
+  "mean": 0.327,
+  "median": 0.265,
+  "p95": 0.424,
+  "max": 9.94
+ },
+ "rtt_protected-to-dc-56B": {
+  "n": 500,
+  "mean": 0.341,
+  "median": 0.275,
+  "p95": 0.475,
+  "max": 7.71
+ },
+ "rtt_incr_56B_median": 0.238,
+ "rtt_incr_56B_mean": 0.397,
+ "rtt_incr_1200B_median": 0.236,
+ "rtt_incr_1200B_mean": 0.298,
+ "iperf_tcp-unprotected": {
+  "mbps": 6541.7,
+  "retrans": 3309
+ },
+ "iperf_tcp-protected-up": {
+  "mbps": 589.3,
+  "retrans": 212892
+ },
+ "iperf_tcp-unprotected-down": {
+  "mbps": 7086.8,
+  "retrans": 2618
+ },
+ "iperf_tcp-protected-down": {
+  "mbps": 675.3,
+  "retrans": 247339
+ },
+ "iperf_aggregate_mbps": 681.7,
+ "proc_idle": [
+  {
+   "cpu_mean": 0.1,
+   "cpu_max": 1,
+   "rss_max_kb": 7700
+  },
+  {
+   "cpu_mean": 0,
+   "cpu_max": 0,
+   "rss_max_kb": 8176
+  }
+ ],
+ "proc_iperf-protected-up": [
+  {
+   "cpu_mean": 56.7,
+   "cpu_max": 64,
+   "rss_max_kb": 10904
+  },
+  {
+   "cpu_mean": 67.5,
+   "cpu_max": 76,
+   "rss_max_kb": 11056
+  }
+ ],
+ "proc_iperf-protected-down": [
+  {
+   "cpu_mean": 74.5,
+   "cpu_max": 86,
+   "rss_max_kb": 11152
+  },
+  {
+   "cpu_mean": 55.3,
+   "cpu_max": 66,
+   "rss_max_kb": 11072
+  }
+ ],
+ "proc_iperf-aggregate": [
+  {
+   "cpu_mean": 62.0,
+   "cpu_max": 75,
+   "rss_max_kb": 11164
+  },
+  {
+   "cpu_mean": 26.8,
+   "cpu_max": 52,
+   "rss_max_kb": 11076
+  },
+  {
+   "cpu_mean": 19.7,
+   "cpu_max": 36,
+   "rss_max_kb": 11084
+  },
+  {
+   "cpu_mean": 32.6,
+   "cpu_max": 50,
+   "rss_max_kb": 11064
+  }
+ ],
+ "hs_phase1": {
+  "pcap": "gw-underlay-establish.pcap",
+  "capture_span_s": 66.1,
+  "client_endpoints": 3,
+  "establishments": {
+   "n": 3,
+   "mean": 1.421,
+   "min": 0.824,
+   "p50": 1.635,
+   "p95": 1.635,
+   "p99": 1.635,
+   "max": 1.803
+  },
+  "rekeys": {
+   "n": 2,
+   "mean": 1.13,
+   "min": 1.076,
+   "p50": 1.076,
+   "p95": 1.076,
+   "p99": 1.076,
+   "max": 1.183
+  },
+  "server_processing_ms_establish": {
+   "n": 3,
+   "mean": 0.95,
+   "min": 0.73,
+   "p50": 0.807,
+   "p95": 0.807,
+   "p99": 0.807,
+   "max": 1.314
+  },
+  "server_processing_ms_rekey": {
+   "n": 2,
+   "mean": 1.03,
+   "min": 0.947,
+   "p50": 0.947,
+   "p95": 0.947,
+   "p99": 0.947,
+   "max": 1.113
+  },
+  "initiations_unanswered": 0,
+  "handshake_attempts": 5,
+  "handshake_success_rate_pct": 100.0,
+  "initiation_message_bytes": [
+   4679,
+   4701
+  ],
+  "response_message_bytes": [
+   4641
+  ],
+  "initiation_fragments": [
+   4
+  ],
+  "response_fragments": [
+   4
+  ],
+  "packet_counts_by_type": {
+   "type1_c2s": 20,
+   "type2_s2c": 20,
+   "type4_s2c": 1518,
+   "type4_c2s": 1515,
+   "type5_c2s": 5
+  }
+ },
+ "hs_phase2": {
+  "pcap": "/home/claude/bench/results/02-voice-rekey/gw-underlay-voice-rekey.pcap",
+  "capture_span_s": 492.0,
+  "client_endpoints": 2,
+  "establishments": {
+   "n": 2,
+   "mean": 11.072,
+   "min": 3.378,
+   "p50": 3.378,
+   "p95": 3.378,
+   "p99": 3.378,
+   "max": 18.766
+  },
+  "rekeys": {
+   "n": 18,
+   "mean": 1.147,
+   "min": 0.646,
+   "p50": 0.955,
+   "p95": 1.884,
+   "p99": 1.884,
+   "max": 3.251
+  },
+  "server_processing_ms_establish": {
+   "n": 2,
+   "mean": 9.271,
+   "min": 1.117,
+   "p50": 1.117,
+   "p95": 1.117,
+   "p99": 1.117,
+   "max": 17.425
+  },
+  "server_processing_ms_rekey": {
+   "n": 18,
+   "mean": 1.0,
+   "min": 0.621,
+   "p50": 0.83,
+   "p95": 1.808,
+   "p99": 1.808,
+   "max": 1.916
+  },
+  "initiations_unanswered": 0,
+  "handshake_attempts": 20,
+  "handshake_success_rate_pct": 100.0,
+  "initiation_message_bytes": [
+   4679,
+   4701
+  ],
+  "response_message_bytes": [
+   4641
+  ],
+  "initiation_fragments": [
+   4
+  ],
+  "response_fragments": [
+   4
+  ],
+  "packet_counts_by_type": {
+   "type1_c2s": 80,
+   "type2_s2c": 80,
+   "type4_s2c": 1107325,
+   "type4_c2s": 3498015,
+   "type5_c2s": 20
+  }
+ },
+ "hsload_c1": [
+  {
+   "attempted": 400,
+   "concurrency": 1,
+   "latency_ms_max": 14.74,
+   "latency_ms_mean": 1.7340500000000003,
+   "latency_ms_min": 0.985,
+   "latency_ms_p50": 1.571,
+   "latency_ms_p95": 2.466,
+   "latency_ms_p99": 6.669,
+   "per_second": 399.6764710892121,
+   "phase": "establish",
+   "succeeded": 400,
+   "success_rate_pct": 100,
+   "wall_s": 1.000809477
+  },
+  {
+   "attempted": 400,
+   "concurrency": 1,
+   "latency_ms_max": 7.39,
+   "latency_ms_mean": 1.3595924999999993,
+   "latency_ms_min": 0.952,
+   "latency_ms_p50": 1.234,
+   "latency_ms_p95": 1.938,
+   "latency_ms_p99": 3.048,
+   "per_second": 537.7701080945209,
+   "phase": "rekey-round-2",
+   "succeeded": 400,
+   "success_rate_pct": 100,
+   "wall_s": 0.743812261
+  },
+  {
+   "attempted": 400,
+   "concurrency": 1,
+   "latency_ms_max": 6.331,
+   "latency_ms_mean": 1.4851375000000004,
+   "latency_ms_min": 0.952,
+   "latency_ms_p50": 1.382,
+   "latency_ms_p95": 2.196,
+   "latency_ms_p99": 3.577,
+   "per_second": 474.3436378713527,
+   "phase": "rekey-round-3",
+   "succeeded": 400,
+   "success_rate_pct": 100,
+   "wall_s": 0.843270507
+  }
+ ],
+ "hsload_c8": [
+  {
+   "attempted": 400,
+   "concurrency": 8,
+   "latency_ms_max": 16.378,
+   "latency_ms_mean": 6.199232499999996,
+   "latency_ms_min": 1.149,
+   "latency_ms_p50": 5.555,
+   "latency_ms_p95": 11.377,
+   "latency_ms_p99": 14.642,
+   "per_second": 1073.7284094825638,
+   "phase": "establish",
+   "succeeded": 400,
+   "success_rate_pct": 100,
+   "wall_s": 0.372533684
+  },
+  {
+   "attempted": 400,
+   "concurrency": 8,
+   "latency_ms_max": 27.837,
+   "latency_ms_mean": 7.321419999999996,
+   "latency_ms_min": 1.449,
+   "latency_ms_p50": 6.922,
+   "latency_ms_p95": 13.87,
+   "latency_ms_p99": 17.555,
+   "per_second": 881.2064740591793,
+   "phase": "rekey-round-2",
+   "succeeded": 400,
+   "success_rate_pct": 100,
+   "wall_s": 0.453923129
+  },
+  {
+   "attempted": 400,
+   "concurrency": 8,
+   "latency_ms_max": 30.761,
+   "latency_ms_mean": 8.922352500000002,
+   "latency_ms_min": 1.317,
+   "latency_ms_p50": 8,
+   "latency_ms_p95": 19.343,
+   "latency_ms_p99": 27.831,
+   "per_second": 763.2736619596127,
+   "phase": "rekey-round-3",
+   "succeeded": 400,
+   "success_rate_pct": 100,
+   "wall_s": 0.524058434
+  }
+ ],
+ "hsload_c32": [
+  {
+   "attempted": 400,
+   "concurrency": 32,
+   "latency_ms_max": 36.728,
+   "latency_ms_mean": 14.427163212435245,
+   "latency_ms_min": 1.073,
+   "latency_ms_p50": 13.738,
+   "latency_ms_p95": 25.275,
+   "latency_ms_p99": 30.491,
+   "per_second": 75.99080614561635,
+   "phase": "establish",
+   "succeeded": 386,
+   "success_rate_pct": 96.5,
+   "wall_s": 5.079561852
+  },
+  {
+   "attempted": 400,
+   "concurrency": 32,
+   "latency_ms_max": 56.031,
+   "latency_ms_mean": 18.839777777777766,
+   "latency_ms_min": 1.141,
+   "latency_ms_p50": 18.557,
+   "latency_ms_p95": 31.083,
+   "latency_ms_p99": 40.204,
+   "per_second": 76.24072535590011,
+   "phase": "rekey-round-2",
+   "succeeded": 387,
+   "success_rate_pct": 96.75,
+   "wall_s": 5.076027257
+  },
+  {
+   "attempted": 400,
+   "concurrency": 32,
+   "latency_ms_max": 42.073,
+   "latency_ms_mean": 16.980297927461127,
+   "latency_ms_min": 1.211,
+   "latency_ms_p50": 17.31,
+   "latency_ms_p95": 28.149,
+   "latency_ms_p99": 37.642,
+   "per_second": 75.776060434601,
+   "phase": "rekey-round-3",
+   "succeeded": 386,
+   "success_rate_pct": 96.5,
+   "wall_s": 5.093957086
+  }
+ ],
+ "hs_real100": {
+  "pcap": "/home/claude/bench/results/04-scale-security/gw-underlay-scale.pcap",
+  "capture_span_s": 228.8,
+  "client_endpoints": 100,
+  "establishments": {
+   "n": 100,
+   "mean": 182.414,
+   "min": 0.753,
+   "p50": 89.095,
+   "p95": 600.115,
+   "p99": 826.7,
+   "max": 835.704
+  },
+  "rekeys": {
+   "n": 463,
+   "mean": 1.167,
+   "min": 0.59,
+   "p50": 0.992,
+   "p95": 2.092,
+   "p99": 3.094,
+   "max": 12.317
+  },
+  "server_processing_ms_establish": {
+   "n": 100,
+   "mean": 153.491,
+   "min": 0.696,
+   "p50": 39.071,
+   "p95": 577.517,
+   "p99": 583.877,
+   "max": 598.662
+  },
+  "server_processing_ms_rekey": {
+   "n": 463,
+   "mean": 1.055,
+   "min": 0.539,
+   "p50": 0.903,
+   "p95": 1.863,
+   "p99": 2.618,
+   "max": 12.2
+  },
+  "initiations_unanswered": 345,
+  "handshake_attempts": 908,
+  "handshake_success_rate_pct": 62.004,
+  "initiation_message_bytes": [
+   4679,
+   4701,
+   4702,
+   4703
+  ],
+  "response_message_bytes": [
+   4641,
+   4642,
+   4643
+  ],
+  "initiation_fragments": [
+   4
+  ],
+  "response_fragments": [
+   4
+  ],
+  "packet_counts_by_type": {
+   "type1_c2s": 3632,
+   "type2_s2c": 2252
+  }
+ },
+ "voice_unprotected": {
+  "label": "unprotected",
+  "expected": 6000,
+  "received": 6000,
+  "lost": 0,
+  "loss_pct": 0.0,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.1985,
+  "one_way_ms_min": 0.0363,
+  "one_way_ms_p50": 0.094,
+  "one_way_ms_p95": 0.2804,
+  "one_way_ms_p99": 2.4507,
+  "one_way_ms_max": 29.5463,
+  "jitter_rfc3550_ms_final": 0.0442,
+  "jitter_rfc3550_ms_mean": 0.2118,
+  "jitter_rfc3550_ms_max": 3.6453,
+  "max_interarrival_gap_ms": 49.485,
+  "max_gap_start_ns": 1791705284512446766,
+  "max_gap_end_ns": 1791705284561931304
+ },
+ "voice_protected-up": {
+  "label": "protected-c2g",
+  "expected": 15000,
+  "received": 15000,
+  "lost": 0,
+  "loss_pct": 0.0,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2019,
+  "one_way_ms_min": 0.0562,
+  "one_way_ms_p50": 0.1402,
+  "one_way_ms_p95": 0.2581,
+  "one_way_ms_p99": 1.1625,
+  "one_way_ms_max": 48.1484,
+  "jitter_rfc3550_ms_final": 0.271,
+  "jitter_rfc3550_ms_mean": 0.1462,
+  "jitter_rfc3550_ms_max": 5.8995,
+  "max_interarrival_gap_ms": 68.031,
+  "max_gap_start_ns": 1791705554782759418,
+  "max_gap_end_ns": 1791705554850790269
+ },
+ "voice_protected-down": {
+  "label": "protected-g2c",
+  "expected": 15000,
+  "received": 15000,
+  "lost": 0,
+  "loss_pct": 0.0,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2741,
+  "one_way_ms_min": 0.0595,
+  "one_way_ms_p50": 0.2007,
+  "one_way_ms_p95": 0.3264,
+  "one_way_ms_p99": 1.7933,
+  "one_way_ms_max": 49.1065,
+  "jitter_rfc3550_ms_final": 0.5119,
+  "jitter_rfc3550_ms_mean": 0.1859,
+  "jitter_rfc3550_ms_max": 6.069,
+  "max_interarrival_gap_ms": 68.884,
+  "max_gap_start_ns": 1791705554781965845,
+  "max_gap_end_ns": 1791705554850849455
+ },
+ "voice_protected-dc-underload": {
+  "label": "protected-to-dc-under-load",
+  "expected": 3000,
+  "received": 2802,
+  "lost": 198,
+  "loss_pct": 6.6,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.6075,
+  "one_way_ms_min": 0.0605,
+  "one_way_ms_p50": 0.2793,
+  "one_way_ms_p95": 2.2288,
+  "one_way_ms_p99": 4.2548,
+  "one_way_ms_max": 12.7254,
+  "jitter_rfc3550_ms_final": 1.0288,
+  "jitter_rfc3550_ms_mean": 0.675,
+  "jitter_rfc3550_ms_max": 2.0873,
+  "max_interarrival_gap_ms": 80.0,
+  "max_gap_start_ns": 1791705749189173416,
+  "max_gap_end_ns": 1791705749269173213
+ },
+ "mobility": {
+  "M1": {
+   "up": {
+    "interruption_gap_ms": 20.8,
+    "recovery_after_restore_ms": 15.8,
+    "lost_packets": 0,
+    "loss_pct": 0.0,
+    "max_gap_ms": 42.004
+   },
+   "down": {
+    "interruption_gap_ms": 40.0,
+    "recovery_after_restore_ms": 35.7,
+    "lost_packets": 1,
+    "loss_pct": 0.05,
+    "max_gap_ms": 40.014
+   }
+  },
+  "M2": {
+   "up": {
+    "interruption_gap_ms": 20.2,
+    "recovery_after_restore_ms": 1.0,
+    "lost_packets": 0,
+    "loss_pct": 0.0,
+    "max_gap_ms": 49.631
+   },
+   "down": {
+    "interruption_gap_ms": 39.9,
+    "recovery_after_restore_ms": 29.1,
+    "lost_packets": 1,
+    "loss_pct": 0.05,
+    "max_gap_ms": 51.092
+   }
+  },
+  "M3": {
+   "up": {
+    "interruption_gap_ms": 20.1,
+    "recovery_after_restore_ms": 8.3,
+    "lost_packets": 0,
+    "loss_pct": 0.0,
+    "max_gap_ms": 36.001
+   },
+   "down": {
+    "interruption_gap_ms": 20.0,
+    "recovery_after_restore_ms": 9.0,
+    "lost_packets": 0,
+    "loss_pct": 0.0,
+    "max_gap_ms": 40.308
+   }
+  },
+  "I1": {
+   "up": {
+    "interruption_gap_ms": 5040.2,
+    "recovery_after_restore_ms": 11.8,
+    "lost_packets": 218,
+    "loss_pct": 5.8133,
+    "max_gap_ms": 5020.153
+   },
+   "down": {
+    "interruption_gap_ms": 6720.1,
+    "recovery_after_restore_ms": 1693.1,
+    "lost_packets": 334,
+    "loss_pct": 8.9067,
+    "max_gap_ms": 6700.036
+   },
+   "outage_imposed_ms": 5010.7
+  },
+  "I2": {
+   "up": {
+    "interruption_gap_ms": 30040.3,
+    "recovery_after_restore_ms": 15.2,
+    "lost_packets": 1468,
+    "loss_pct": 29.36,
+    "max_gap_ms": 30020.399
+   },
+   "down": {
+    "interruption_gap_ms": 31180.1,
+    "recovery_after_restore_ms": 1156.2,
+    "lost_packets": 1558,
+    "loss_pct": 31.16,
+    "max_gap_ms": 31180.117
+   },
+   "outage_imposed_ms": 30009.9
+  },
+  "I3": {
+   "up": {
+    "interruption_gap_ms": 200243.0,
+    "recovery_after_restore_ms": 226.6,
+    "lost_packets": 9980,
+    "loss_pct": 73.9259,
+    "max_gap_ms": 200243.029
+   },
+   "down": {
+    "interruption_gap_ms": 200243.4,
+    "recovery_after_restore_ms": 227.0,
+    "lost_packets": 9980,
+    "loss_pct": 73.9259,
+    "max_gap_ms": 200243.385
+   },
+   "outage_imposed_ms": 200010.5
+  },
+  "G1": {
+   "up": {
+    "interruption_gap_ms": null,
+    "recovery_after_restore_ms": null,
+    "lost_packets": 2250,
+    "loss_pct": 75.0,
+    "max_gap_ms": 33.24
+   },
+   "down": {
+    "interruption_gap_ms": null,
+    "recovery_after_restore_ms": null,
+    "lost_packets": 2250,
+    "loss_pct": 75.0,
+    "max_gap_ms": 25.12
+   },
+   "outage_imposed_ms": 2014.8
+  }
+ },
+ "restart": {
+  "G2": {
+   "up": {
+    "interruption_gap_ms": 15400.1,
+    "recovery_after_restore_ms": 13371.4,
+    "lost_packets": 768,
+    "loss_pct": 10.9714,
+    "max_gap_ms": 15378.742
+   },
+   "down": {
+    "interruption_gap_ms": 15400.1,
+    "recovery_after_restore_ms": 13374.8,
+    "lost_packets": 768,
+    "loss_pct": 10.9714,
+    "max_gap_ms": 15380.016
+   },
+   "outage_imposed_ms": 2010.9
+  },
+  "G3pre": {
+   "up": {
+    "interruption_gap_ms": 190283.0,
+    "recovery_after_restore_ms": 259.1,
+    "lost_packets": 9482,
+    "loss_pct": 88.2047,
+    "max_gap_ms": 190283.045
+   },
+   "down": {
+    "interruption_gap_ms": 190280.6,
+    "recovery_after_restore_ms": 259.4,
+    "lost_packets": 9482,
+    "loss_pct": 88.2047,
+    "max_gap_ms": 190280.593
+   },
+   "outage_imposed_ms": 190009.1
+  },
+  "G3": {
+   "up": {
+    "interruption_gap_ms": 15320.1,
+    "recovery_after_restore_ms": 13292.2,
+    "lost_packets": 764,
+    "loss_pct": 7.107,
+    "max_gap_ms": 15296.198
+   },
+   "down": {
+    "interruption_gap_ms": 15320.0,
+    "recovery_after_restore_ms": 13293.0,
+    "lost_packets": 764,
+    "loss_pct": 7.107,
+    "max_gap_ms": 15297.082
+   },
+   "outage_imposed_ms": 2011.1
+  }
+ },
+ "replay_handshake": {
+  "fresh_handshake_after_replay_ok": true,
+  "original_handshake_ok": true,
+  "pass": true,
+  "replay_other_source_answered": false,
+  "replay_same_source_answered": false
+ },
+ "dos_junk": {
+  "attack": "junk",
+  "attack_datagrams_per_message": 1,
+  "attack_messages_sent": 145917,
+  "attack_rate_achieved_per_s": 4833.14235249458,
+  "attempted": 60,
+  "latency_ms_max": 4.583,
+  "latency_ms_mean": 1.684966666666667,
+  "latency_ms_min": 1.218,
+  "latency_ms_p50": 1.485,
+  "latency_ms_p95": 2.47,
+  "latency_ms_p99": 3.478,
+  "per_second": 1.987354304577949,
+  "phase": "legit-probe-under-junk",
+  "succeeded": 60,
+  "success_rate_pct": 100,
+  "wall_s": 30.190892415
+ },
+ "dos_badmac": {
+  "attack": "badmac",
+  "attack_datagrams_per_message": 4,
+  "attack_messages_sent": 59147,
+  "attack_rate_achieved_per_s": 1970.051196903244,
+  "attempted": 12,
+  "latency_ms_max": 2.547,
+  "latency_ms_mean": 1.96225,
+  "latency_ms_min": 1.715,
+  "latency_ms_p50": 1.764,
+  "latency_ms_p95": 1.823,
+  "latency_ms_p99": 1.823,
+  "per_second": 0.13323092642537873,
+  "phase": "legit-probe-under-badmac",
+  "succeeded": 4,
+  "success_rate_pct": 33.333333333333336,
+  "wall_s": 30.023059265
+ },
+ "dos_replay": {
+  "attack": "replay",
+  "attack_datagrams_per_message": 4,
+  "attack_messages_sent": 30103,
+  "attack_rate_achieved_per_s": 996.3269457419226,
+  "attempted": 60,
+  "latency_ms_max": 6.212,
+  "latency_ms_mean": 2.0390166666666665,
+  "latency_ms_min": 1.132,
+  "latency_ms_p50": 1.69,
+  "latency_ms_p95": 4.364,
+  "latency_ms_p99": 5.883,
+  "per_second": 1.9858382409609183,
+  "phase": "legit-probe-under-replay",
+  "succeeded": 60,
+  "success_rate_pct": 100,
+  "wall_s": 30.213941278
+ },
+ "dos4b_baseline": {
+  "attack": "none",
+  "attack_datagrams_per_message": 1,
+  "attack_messages_sent": 120,
+  "attack_rate_achieved_per_s": 3.975845247061682,
+  "attempted": 60,
+  "latency_ms_max": 3.579,
+  "latency_ms_mean": 1.6973999999999998,
+  "latency_ms_min": 1.267,
+  "latency_ms_p50": 1.62,
+  "latency_ms_p95": 2.411,
+  "latency_ms_p99": 2.493,
+  "per_second": 1.987925043374916,
+  "phase": "legit-probe-under-none",
+  "succeeded": 60,
+  "success_rate_pct": 100,
+  "wall_s": 30.182224526
+ },
+ "dos4b_frag1-200": {
+  "attack": "frag1",
+  "attack_datagrams_per_message": 1,
+  "attack_messages_sent": 6035,
+  "attack_rate_achieved_per_s": 199.96331678089416,
+  "attempted": 60,
+  "latency_ms_max": 3.347,
+  "latency_ms_mean": 1.7693333333333332,
+  "latency_ms_min": 1.262,
+  "latency_ms_p50": 1.536,
+  "latency_ms_p95": 2.902,
+  "latency_ms_p99": 3.071,
+  "per_second": 1.988038260593661,
+  "phase": "legit-probe-under-frag1",
+  "succeeded": 60,
+  "success_rate_pct": 100,
+  "wall_s": 30.180505672
+ },
+ "dos4b_frag1-1000": {
+  "attack": "frag1",
+  "attack_datagrams_per_message": 1,
+  "attack_messages_sent": 32833,
+  "attack_rate_achieved_per_s": 992.0652962102222,
+  "attempted": 30,
+  "latency_ms_max": 3.832,
+  "latency_ms_mean": 1.9327500000000004,
+  "latency_ms_min": 1.466,
+  "latency_ms_p50": 1.719,
+  "latency_ms_p95": 2.435,
+  "latency_ms_p99": 2.807,
+  "per_second": 0.7251723763261974,
+  "phase": "legit-probe-under-frag1",
+  "succeeded": 24,
+  "success_rate_pct": 80,
+  "wall_s": 33.095579456
+ },
+ "soak": {
+  "clients": 20,
+  "ping_tx": 70697,
+  "ping_rx": 70697,
+  "ping_loss_pct": 0.0,
+  "client_outages_ge_3s": 0,
+  "scheduled_rekeys_client_logs": 580,
+  "no_response_recoveries_client_logs": 0,
+  "handshakes_completed_gateway": 600,
+  "gave_up_handshakes": 0,
+  "rejected_initiations": 0,
+  "error_level_lines": 0,
+  "warn_level_lines": 0,
+  "dc_fetches": 120,
+  "dc_fetch_ok": 120,
+  "gateway_cpu_pct_mean": 2.83,
+  "gateway_cpu_pct_max": 10,
+  "gateway_rss_kb_start": 8312,
+  "gateway_rss_kb_end": 10696,
+  "gateway_rss_kb_max": 11452,
+  "duration_min": 60
+ },
+ "soak_hs": {
+  "pcap": "/home/claude/bench/results/05-soak/gw-underlay-soak-handshakes.pcap",
+  "capture_span_s": 3509.0,
+  "client_endpoints": 20,
+  "establishments": {
+   "n": 20,
+   "mean": 23.71,
+   "min": 1.685,
+   "p50": 21.874,
+   "p95": 41.692,
+   "p99": 41.692,
+   "max": 44.038
+  },
+  "rekeys": {
+   "n": 580,
+   "mean": 3.756,
+   "min": 0.545,
+   "p50": 2.036,
+   "p95": 11.377,
+   "p99": 23.326,
+   "max": 33.266
+  },
+  "server_processing_ms_establish": {
+   "n": 20,
+   "mean": 20.747,
+   "min": 1.651,
+   "p50": 20.463,
+   "p95": 29.533,
+   "p99": 29.533,
+   "max": 29.627
+  },
+  "server_processing_ms_rekey": {
+   "n": 580,
+   "mean": 3.522,
+   "min": 0.509,
+   "p50": 1.879,
+   "p95": 11.256,
+   "p99": 22.419,
+   "max": 30.681
+  },
+  "initiations_unanswered": 0,
+  "handshake_attempts": 600,
+  "handshake_success_rate_pct": 100.0,
+  "initiation_message_bytes": [
+   4679,
+   4701,
+   4702
+  ],
+  "response_message_bytes": [
+   4641,
+   4642
+  ],
+  "initiation_fragments": [
+   4
+  ],
+  "response_fragments": [
+   4
+  ],
+  "packet_counts_by_type": {
+   "type1_c2s": 2400,
+   "type2_s2c": 2400
+  }
+ },
+ "soak_voice_up": {
+  "label": "soak-up",
+  "expected": 180000,
+  "received": 179998,
+  "lost": 2,
+  "loss_pct": 0.0011,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2601,
+  "one_way_ms_min": 0.0461,
+  "one_way_ms_p50": 0.1869,
+  "one_way_ms_p95": 0.3546,
+  "one_way_ms_p99": 1.839,
+  "one_way_ms_max": 65.3993,
+  "jitter_rfc3550_ms_final": 0.1049,
+  "jitter_rfc3550_ms_mean": 0.1807,
+  "jitter_rfc3550_ms_max": 9.0295,
+  "max_interarrival_gap_ms": 85.131,
+  "max_gap_start_ns": 1791709275067965564,
+  "max_gap_end_ns": 1791709275153096456
+ },
+ "soak_voice_down": {
+  "label": "soak-down",
+  "expected": 180000,
+  "received": 179979,
+  "lost": 21,
+  "loss_pct": 0.0117,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2622,
+  "one_way_ms_min": 0.0465,
+  "one_way_ms_p50": 0.1894,
+  "one_way_ms_p95": 0.3502,
+  "one_way_ms_p99": 1.8915,
+  "one_way_ms_max": 74.3945,
+  "jitter_rfc3550_ms_final": 0.0897,
+  "jitter_rfc3550_ms_mean": 0.1857,
+  "jitter_rfc3550_ms_max": 8.7238,
+  "max_interarrival_gap_ms": 88.302,
+  "max_gap_start_ns": 1791709275064995611,
+  "max_gap_end_ns": 1791709275153297928
+ },
+ "mem_client_idle_mb": 5.79,
+ "gw_mem": [
+  11.0,
+  33.4,
+  49.8
+ ],
+ "soak_client_c1": {
+  "cpu_mean": 3.14,
+  "rss_max_mb": 9.0
+ }
+}
