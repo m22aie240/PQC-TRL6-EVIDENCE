@@ -1,0 +1,475 @@
+go version go1.24.7 linux/amd64
+amd64
+linux
+
+VET_EXIT=0
+?   	pqcvpn/cmd/libpqcvpn	[no test files]
+?   	pqcvpn/cmd/pqcvpn	[no test files]
+=== RUN   TestParseServer
+--- PASS: TestParseServer (0.00s)
+=== RUN   TestUnknownKeysAndSectionsAreErrors
+--- PASS: TestUnknownKeysAndSectionsAreErrors (0.00s)
+=== RUN   TestValidation
+=== RUN   TestValidation/server_needs_an_address
+=== RUN   TestValidation/client_needs_exactly_one_peer
+=== RUN   TestValidation/client_peer_needs_an_endpoint
+=== RUN   TestValidation/SigPublicKey_required_by_default
+=== RUN   TestValidation/peer_may_not_reuse_our_own_key
+=== RUN   TestValidation/unknown_tenant_on_a_peer
+--- PASS: TestValidation (0.00s)
+    --- PASS: TestValidation/server_needs_an_address (0.00s)
+    --- PASS: TestValidation/client_needs_exactly_one_peer (0.00s)
+    --- PASS: TestValidation/client_peer_needs_an_endpoint (0.00s)
+    --- PASS: TestValidation/SigPublicKey_required_by_default (0.00s)
+    --- PASS: TestValidation/peer_may_not_reuse_our_own_key (0.00s)
+    --- PASS: TestValidation/unknown_tenant_on_a_peer (0.00s)
+=== RUN   TestImplicitTenant
+--- PASS: TestImplicitTenant (0.00s)
+=== RUN   TestKeepaliveOff
+--- PASS: TestKeepaliveOff (0.00s)
+PASS
+ok  	pqcvpn/internal/config	0.011s
+?   	pqcvpn/internal/control	[no test files]
+=== RUN   TestSessionRoundTripAndAAD
+--- PASS: TestSessionRoundTripAndAAD (0.00s)
+=== RUN   TestReplayRejectsDuplicateOfNewestPacket
+--- PASS: TestReplayRejectsDuplicateOfNewestPacket (0.00s)
+=== RUN   TestReplayOutOfOrderWindow
+--- PASS: TestReplayOutOfOrderWindow (0.00s)
+=== RUN   TestReplayRejectsAboveHardLimit
+--- PASS: TestReplayRejectsAboveHardLimit (0.00s)
+=== RUN   TestSessionCounterExhaustion
+--- PASS: TestSessionCounterExhaustion (0.00s)
+=== RUN   TestNeedsRekey
+--- PASS: TestNeedsRekey (0.00s)
+=== RUN   TestSymmetricStateAgreement
+--- PASS: TestSymmetricStateAgreement (0.00s)
+=== RUN   TestSymmetricStateDifferentProtocolFails
+--- PASS: TestSymmetricStateDifferentProtocolFails (0.00s)
+=== RUN   TestLowOrderPointRejected
+--- PASS: TestLowOrderPointRejected (0.00s)
+PASS
+ok  	pqcvpn/internal/crypto	0.002s
+=== RUN   TestClientToClientThroughServer
+time=2026-10-11T13:04:47.253+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:35631 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="m7jpsy49kcM2hGLdP4GLZeAzUjZinAvFn7ijfNzF94Y=" pq_peer_auth_required=true peers=2
+time=2026-10-11T13:04:47.255+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:38577 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="1Sz2vLwHXaPBh5schMvOYlikVU3o62aMYnim199URRw=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:47.258+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:38577 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.259+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:47.259+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:35631 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.261+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:54503 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="aqxWsQ7TW76cAtvYhBJEaP4LlGYe59frWOYlvlLHrx8=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:47.262+05:30 level=INFO msg="handshake complete (responder)" peer=bob endpoint=127.0.0.1:54503 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.262+05:30 level=INFO msg="configured from server" address=10.8.0.3/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:47.262+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:35631 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+    device_test.go:223: alice=10.8.0.2/24 bob=10.8.0.3/24
+time=2026-10-11T13:04:47.262+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:38577]
+time=2026-10-11T13:04:47.263+05:30 level=DEBUG msg="asking the server for a direct path" address=10.8.0.3
+time=2026-10-11T13:04:47.262+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:38577] p2p=true
+time=2026-10-11T13:04:47.263+05:30 level=DEBUG msg="refused brokering" from=alice address=10.8.0.3 reason="peer has not enabled peer-to-peer"
+time=2026-10-11T13:04:47.263+05:30 level=INFO msg="server refused a direct path" address=10.8.0.3 reason="peer has not enabled peer-to-peer"
+time=2026-10-11T13:04:47.263+05:30 level=DEBUG msg="peer announced candidates" peer=bob local=[192.0.2.2:54503] p2p=true
+time=2026-10-11T13:04:47.263+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:54503]
+time=2026-10-11T13:04:47.463+05:30 level=DEBUG msg="asking the server for a direct path" address=10.8.0.2
+time=2026-10-11T13:04:47.465+05:30 level=INFO msg="brokered a direct path" a=bob b=alice initiator=bob
+time=2026-10-11T13:04:47.465+05:30 level=INFO msg="learned a peer from the server" peer=10.8.0.3 overlay=10.8.0.3/24
+time=2026-10-11T13:04:47.465+05:30 level=INFO msg="punching to peer" peer=10.8.0.3 candidates=2 initiator=false
+--- PASS: TestClientToClientThroughServer (0.21s)
+=== RUN   TestEgressToServerTun
+time=2026-10-11T13:04:47.466+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:57972 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="dy5mZDjWLRLjHkQF5a8kBWXZ25LnFSnGRDjHhGunHr8=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:47.467+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:45653 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="PR/6R2uZJgcjw02g7Ot9F6pT0LrWE/eAdq2RSCy1hAk=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:47.474+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:45653 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.475+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:47.475+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:57972 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.475+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:45653]
+time=2026-10-11T13:04:47.475+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:45653] p2p=true
+--- PASS: TestEgressToServerTun (0.01s)
+=== RUN   TestSpoofedSourceRejected
+time=2026-10-11T13:04:47.478+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:48409 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="CVeBjfxYDJAla6FAm6hNEipR4jpNteuwcMXVHvT9XO4=" pq_peer_auth_required=true peers=2
+time=2026-10-11T13:04:47.481+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:37969 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="3t4N0kf/5OaCCHfP0pQyT8WVqumaF0cyZcBkG9BGgrU=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:47.482+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:35645 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="ebMkZK6TYrh3ZQK/2Oq6D1euq/fUbeFLSElx82VXzoc=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:47.482+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:37969 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.483+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:47.483+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:48409 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.483+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:37969]
+time=2026-10-11T13:04:47.483+05:30 level=INFO msg="handshake complete (responder)" peer=bob endpoint=127.0.0.1:35645 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.483+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:37969] p2p=true
+time=2026-10-11T13:04:47.484+05:30 level=INFO msg="configured from server" address=10.8.0.3/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:47.484+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:48409 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.484+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:35645]
+time=2026-10-11T13:04:47.484+05:30 level=DEBUG msg="asking the server for a direct path" address=10.8.0.3
+time=2026-10-11T13:04:47.484+05:30 level=DEBUG msg="peer announced candidates" peer=bob local=[192.0.2.2:35645] p2p=true
+time=2026-10-11T13:04:47.485+05:30 level=INFO msg="brokered a direct path" a=alice b=bob initiator=bob
+time=2026-10-11T13:04:47.485+05:30 level=DEBUG msg="dropping spoofed source" peer=alice src=10.8.0.1
+time=2026-10-11T13:04:47.485+05:30 level=INFO msg="learned a peer from the server" peer=10.8.0.2 overlay=10.8.0.2/24
+time=2026-10-11T13:04:47.485+05:30 level=INFO msg="punching to peer" peer=10.8.0.2 candidates=2 initiator=true
+time=2026-10-11T13:04:47.486+05:30 level=INFO msg="learned a peer from the server" peer=10.8.0.3 overlay=10.8.0.3/24
+time=2026-10-11T13:04:47.486+05:30 level=INFO msg="punching to peer" peer=10.8.0.3 candidates=2 initiator=false
+time=2026-10-11T13:04:47.486+05:30 level=DEBUG msg="punch probe answered" peer=10.8.0.3 endpoint=127.0.0.1:35645
+time=2026-10-11T13:04:47.487+05:30 level=DEBUG msg="punch probe answered" peer=10.8.0.2 endpoint=127.0.0.1:37969
+time=2026-10-11T13:04:47.487+05:30 level=DEBUG msg="starting direct handshake" peer=10.8.0.2 endpoint=127.0.0.1:37969
+time=2026-10-11T13:04:47.488+05:30 level=INFO msg="routing directly" peer=10.8.0.3 prefix=10.8.0.3/32
+time=2026-10-11T13:04:47.488+05:30 level=INFO msg="handshake complete (responder)" peer=10.8.0.3 endpoint=127.0.0.1:35645 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.489+05:30 level=INFO msg="routing directly" peer=10.8.0.2 prefix=10.8.0.2/32
+time=2026-10-11T13:04:47.489+05:30 level=INFO msg="handshake complete (initiator)" peer=10.8.0.2 endpoint=127.0.0.1:37969 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:47.636+05:30 level=INFO msg="direct tunnel established" peer=10.8.0.3 endpoint=127.0.0.1:35645
+time=2026-10-11T13:04:47.636+05:30 level=INFO msg="routing directly" peer=10.8.0.3 prefix=10.8.0.3/32
+time=2026-10-11T13:04:47.636+05:30 level=INFO msg="direct tunnel established" peer=10.8.0.2 endpoint=127.0.0.1:37969
+time=2026-10-11T13:04:47.636+05:30 level=INFO msg="routing directly" peer=10.8.0.2 prefix=10.8.0.2/32
+--- PASS: TestSpoofedSourceRejected (0.61s)
+=== RUN   TestTenantIsolation
+time=2026-10-11T13:04:48.086+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:46584 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="b64h2nRfKKhPppMpYTE98RYl3kg2mTkS4TbWAzsVNdY=" pq_peer_auth_required=true peers=2
+time=2026-10-11T13:04:48.086+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:54659 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="Pm/Q/+Miypyc9phrls9nqW2HEY3wlEkNI6iZQsOsu/Q=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:48.087+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:54633 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="xeRM5tDeIOPo5F4xdK5f+TGdnyWYCRKA1kSH/xY6h94=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:48.088+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:54659 address=10.8.0.2/25 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:48.088+05:30 level=INFO msg="configured from server" address=10.8.0.2/25 routes=[10.8.0.0/25] topology=subnet mtu=1420
+time=2026-10-11T13:04:48.088+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:46584 address=10.8.0.2/25 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:48.089+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:54659]
+time=2026-10-11T13:04:48.089+05:30 level=INFO msg="handshake complete (responder)" peer=bob endpoint=127.0.0.1:54633 address=10.8.0.129/25 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:48.089+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:54659] p2p=true
+time=2026-10-11T13:04:48.090+05:30 level=INFO msg="configured from server" address=10.8.0.129/25 routes=[10.8.0.128/25] topology=subnet mtu=1420
+time=2026-10-11T13:04:48.090+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:46584 address=10.8.0.129/25 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:48.090+05:30 level=DEBUG msg="blocked peer-to-peer traffic" from=alice to=bob reason="tenant policy"
+time=2026-10-11T13:04:48.090+05:30 level=DEBUG msg="peer announced candidates" peer=bob local=[192.0.2.2:54633] p2p=true
+time=2026-10-11T13:04:48.090+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:54633]
+--- PASS: TestTenantIsolation (0.51s)
+=== RUN   TestPointToPointTopology
+time=2026-10-11T13:04:48.591+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:48383 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="0uDXpUv0XcqrilPZuAzslTFkQySm8xjiWQQHYcFm/mg=" pq_peer_auth_required=true peers=2
+time=2026-10-11T13:04:48.592+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:36788 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="VrwsSF36EtzChWczKO8oZszjVD3WgTTBAZ9xPVOV6K0=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:48.594+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:47939 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="RBtZplBXYdUtWCZQ67p9o2Y1MQ4sBETvaJwXumUxBak=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:48.594+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:36788 address=10.9.0.1/32 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:48.594+05:30 level=INFO msg="configured from server" address=10.9.0.1/32 routes=[10.9.0.0/24] topology=p2p mtu=1420
+time=2026-10-11T13:04:48.594+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:48383 address=10.9.0.1/32 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:48.594+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:36788]
+time=2026-10-11T13:04:48.595+05:30 level=INFO msg="handshake complete (responder)" peer=bob endpoint=127.0.0.1:47939 address=10.9.0.2/32 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:48.595+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:36788] p2p=true
+time=2026-10-11T13:04:48.596+05:30 level=INFO msg="configured from server" address=10.9.0.2/32 routes=[10.9.0.0/24] topology=p2p mtu=1420
+time=2026-10-11T13:04:48.596+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:48383 address=10.9.0.2/32 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:48.596+05:30 level=DEBUG msg="blocked peer-to-peer traffic" from=alice to=bob reason="tenant policy"
+time=2026-10-11T13:04:48.596+05:30 level=DEBUG msg="peer announced candidates" peer=bob local=[192.0.2.2:47939] p2p=true
+time=2026-10-11T13:04:48.596+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:47939]
+--- PASS: TestPointToPointTopology (0.51s)
+=== RUN   TestStaticAddressReservation
+time=2026-10-11T13:04:49.098+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:42847 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="9Ipie4xcXRqBL9/Oqz7N7qF3oTETydUOlkBbR2NmErQ=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:49.098+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:35875 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="5M5HW0XgGXGznI4VSxE0EiU+Bucb42GxnbYVsLc6Rpg=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:49.101+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:35875 address=10.8.0.42/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:49.101+05:30 level=INFO msg="configured from server" address=10.8.0.42/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:49.101+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:42847 address=10.8.0.42/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:49.101+05:30 level=DEBUG msg="udp write failed" peer=server err="write udp 0.0.0.0:35875->127.0.0.1:42847: use of closed network connection"
+time=2026-10-11T13:04:49.101+05:30 level=DEBUG msg="announce failed" err="write udp 0.0.0.0:35875->127.0.0.1:42847: use of closed network connection"
+--- PASS: TestStaticAddressReservation (0.00s)
+=== RUN   TestUnknownClientRejected
+time=2026-10-11T13:04:49.102+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:37060 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="ZaBLukrWyE6xf1NOc/Q1TfYOz2i1DLgijci25w/DkDU=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:49.102+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:42764 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="YtLyOsYPeO6P+uYP0TKyXViZnrIE/FOMB6+CNArReoY=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:49.103+05:30 level=WARN msg="rejected initiation" src=127.0.0.1:42764 err="pqcvpn/handshake: unknown peer identity: +fmIkNTX6MbU7H4H/jMisx6NlWKoQn2n/+koO47/QEE="
+--- PASS: TestUnknownClientRejected (2.00s)
+=== RUN   TestStickyAddressAcrossReconnect
+time=2026-10-11T13:04:51.106+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:48400 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="UQM7GdJ331nVThkBoE3NY+NcGir/S+0y7+Lna1ESODI=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.107+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:50815 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="RarnwxOzyNAAWsEA7t8diIXDCXqFMJAZODfDclCXvZE=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.113+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:50815 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.113+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:51.113+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:48400 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.114+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:59903 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="RarnwxOzyNAAWsEA7t8diIXDCXqFMJAZODfDclCXvZE=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.114+05:30 level=WARN msg="peer re-handshaked from a different address while a session was live; if this repeats, two devices are probably sharing one identity" peer=alice previous=127.0.0.1:50815 now=127.0.0.1:59903
+time=2026-10-11T13:04:51.115+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:59903 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.115+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:51.115+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:48400 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.115+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:59903]
+--- PASS: TestStickyAddressAcrossReconnect (0.01s)
+=== RUN   TestDirectTunnelReplacesRelay
+time=2026-10-11T13:04:51.116+05:30 level=DEBUG msg="udp write failed" peer=server err="write udp 0.0.0.0:50815->127.0.0.1:48400: use of closed network connection"
+time=2026-10-11T13:04:51.116+05:30 level=DEBUG msg="announce failed" err="write udp 0.0.0.0:50815->127.0.0.1:48400: use of closed network connection"
+time=2026-10-11T13:04:51.117+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:48771 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="kwL1sb3m0DSp+zO3gfYq+1WE6DgPs2QN5CIL318UR24=" pq_peer_auth_required=true peers=2
+time=2026-10-11T13:04:51.117+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:57673 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="9E9J9yVeNwaRJk4WaNbYKNF8czs+Dvqs8SDVLR2AbTw=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.120+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:56434 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="ZqxnbDjd6l367wOr7cQnHst9Sa93DUOP/xwx+D4yrb4=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.124+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:57673 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.124+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:51.124+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:48771 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.124+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:57673]
+time=2026-10-11T13:04:51.125+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:57673] p2p=true
+time=2026-10-11T13:04:51.125+05:30 level=INFO msg="handshake complete (responder)" peer=bob endpoint=127.0.0.1:56434 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.126+05:30 level=INFO msg="configured from server" address=10.8.0.3/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:51.126+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:48771 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.126+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:56434]
+time=2026-10-11T13:04:51.126+05:30 level=DEBUG msg="peer announced candidates" peer=bob local=[192.0.2.2:56434] p2p=true
+time=2026-10-11T13:04:51.148+05:30 level=DEBUG msg="asking the server for a direct path" address=10.8.0.3
+time=2026-10-11T13:04:51.149+05:30 level=INFO msg="learned a peer from the server" peer=10.8.0.3 overlay=10.8.0.3/24
+time=2026-10-11T13:04:51.149+05:30 level=INFO msg="punching to peer" peer=10.8.0.3 candidates=2 initiator=false
+time=2026-10-11T13:04:51.150+05:30 level=INFO msg="brokered a direct path" a=alice b=bob initiator=bob
+time=2026-10-11T13:04:51.151+05:30 level=INFO msg="learned a peer from the server" peer=10.8.0.2 overlay=10.8.0.2/24
+time=2026-10-11T13:04:51.151+05:30 level=INFO msg="punching to peer" peer=10.8.0.2 candidates=2 initiator=true
+time=2026-10-11T13:04:51.151+05:30 level=DEBUG msg="punch probe answered" peer=10.8.0.3 endpoint=127.0.0.1:56434
+time=2026-10-11T13:04:51.300+05:30 level=DEBUG msg="punch probe answered" peer=10.8.0.2 endpoint=127.0.0.1:57673
+time=2026-10-11T13:04:51.300+05:30 level=DEBUG msg="starting direct handshake" peer=10.8.0.2 endpoint=127.0.0.1:57673
+time=2026-10-11T13:04:51.302+05:30 level=INFO msg="routing directly" peer=10.8.0.3 prefix=10.8.0.3/32
+time=2026-10-11T13:04:51.302+05:30 level=INFO msg="handshake complete (responder)" peer=10.8.0.3 endpoint=127.0.0.1:56434 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.302+05:30 level=INFO msg="routing directly" peer=10.8.0.2 prefix=10.8.0.2/32
+time=2026-10-11T13:04:51.302+05:30 level=INFO msg="handshake complete (initiator)" peer=10.8.0.2 endpoint=127.0.0.1:57673 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.451+05:30 level=INFO msg="direct tunnel established" peer=10.8.0.3 endpoint=127.0.0.1:56434
+time=2026-10-11T13:04:51.451+05:30 level=INFO msg="routing directly" peer=10.8.0.3 prefix=10.8.0.3/32
+time=2026-10-11T13:04:51.452+05:30 level=INFO msg="direct tunnel established" peer=10.8.0.2 endpoint=127.0.0.1:57673
+time=2026-10-11T13:04:51.452+05:30 level=INFO msg="routing directly" peer=10.8.0.2 prefix=10.8.0.2/32
+    p2p_test.go:111: relayed 1 packets before going direct, 0 after
+--- PASS: TestDirectTunnelReplacesRelay (0.40s)
+=== RUN   TestEgressStillRelayedWithP2P
+time=2026-10-11T13:04:51.516+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:59949 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="LdIhCqcYkqMyMLTPsGW4ktQn1plCuG81BtX4E/evczQ=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.516+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:58415 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="AqDmipQmLa3noyPZX3bdd6Oz8dPXsdVqQkM/KsBIuaQ=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.517+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:58415 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.518+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:51.518+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:59949 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.518+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:58415]
+time=2026-10-11T13:04:51.518+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:58415] p2p=true
+--- PASS: TestEgressStillRelayedWithP2P (0.00s)
+=== RUN   TestBrokeringRefusedAcrossTenants
+time=2026-10-11T13:04:51.519+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:57285 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="1UdgASMqd7CrHZP8TzZmA2ZR0Y0lBCVtQOBHR55BSrI=" pq_peer_auth_required=true peers=2
+time=2026-10-11T13:04:51.520+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:57815 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="EbXk7ydo3iZ2lUcjxS6PfS7zLdTL1opMkcMLc3V3hpU=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.521+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:57815 address=10.8.0.2/25 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.522+05:30 level=INFO msg="configured from server" address=10.8.0.2/25 routes=[10.8.0.0/25] topology=subnet mtu=1420
+time=2026-10-11T13:04:51.522+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:57285 address=10.8.0.2/25 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.522+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:57815]
+time=2026-10-11T13:04:51.522+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:38580 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="LcCTw3imj2h4kCOO4vWODhV5C+1jN+039YjseldOIT0=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:51.522+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:57815] p2p=true
+time=2026-10-11T13:04:51.524+05:30 level=INFO msg="handshake complete (responder)" peer=bob endpoint=127.0.0.1:38580 address=10.8.0.129/25 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.524+05:30 level=INFO msg="configured from server" address=10.8.0.129/25 routes=[10.8.0.128/25] topology=subnet mtu=1420
+time=2026-10-11T13:04:51.524+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:57285 address=10.8.0.129/25 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:51.524+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:38580]
+time=2026-10-11T13:04:51.524+05:30 level=DEBUG msg="peer announced candidates" peer=bob local=[192.0.2.2:38580] p2p=true
+time=2026-10-11T13:04:51.545+05:30 level=DEBUG msg="blocked peer-to-peer traffic" from=alice to=bob reason="tenant policy"
+--- PASS: TestBrokeringRefusedAcrossTenants (1.53s)
+=== RUN   TestPeerToPeerDisabledStaysOnRelay
+time=2026-10-11T13:04:53.047+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:57283 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="S5kIyEkbxxk+tLRldm8LGVTOFmfCxUAW7vqndo5pOpU=" pq_peer_auth_required=true peers=2
+time=2026-10-11T13:04:53.049+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:47011 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="VJZtho1bNqUP470qDsPwoEJqFU/TcRbM2pqO4CWxdeo=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:53.050+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:44156 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="ba7QItXK0cZfEFXwqALE6OJ1iuRWtVIwfbvBhamjevM=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:53.050+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:47011 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.051+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:53.051+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:57283 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.051+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:47011]
+time=2026-10-11T13:04:53.051+05:30 level=INFO msg="handshake complete (responder)" peer=bob endpoint=127.0.0.1:44156 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.051+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:47011] p2p=false
+time=2026-10-11T13:04:53.052+05:30 level=INFO msg="configured from server" address=10.8.0.3/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:53.052+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:57283 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.052+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:44156]
+time=2026-10-11T13:04:53.052+05:30 level=DEBUG msg="peer announced candidates" peer=bob local=[192.0.2.2:44156] p2p=true
+--- PASS: TestPeerToPeerDisabledStaysOnRelay (0.51s)
+=== RUN   TestForgedPeerRecordRejected
+time=2026-10-11T13:04:53.554+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:51425 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="5Mlt/NcBO2lEWwaJi6CrKJC4BJd8NPqUxTO+kZg6OjU=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:53.555+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:50767 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="Db0AWtCkuFjDBCFfA/Ex2LlMsycVpEyyfsAmU7nsMPQ=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:53.556+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:50767 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.556+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:53.556+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:51425 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.556+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:50767]
+time=2026-10-11T13:04:53.556+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:50767] p2p=true
+time=2026-10-11T13:04:53.557+05:30 level=WARN msg="rejected peer record" err="pqcvpn/control: peer record signature is invalid"
+time=2026-10-11T13:04:53.557+05:30 level=WARN msg="rejected peer record" err="pqcvpn/control: peer record does not match the expected peer: issued to UMAYi6lIKshdjUe6IZIi/MW52HH07pXgL9ybn9qXFXQ="
+time=2026-10-11T13:04:53.557+05:30 level=WARN msg="rejected peer record" err="pqcvpn/control: peer record has expired"
+time=2026-10-11T13:04:53.557+05:30 level=INFO msg="learned a peer from the server" peer=10.8.0.99 overlay=10.8.0.99/24
+time=2026-10-11T13:04:53.557+05:30 level=INFO msg="punching to peer" peer=10.8.0.99 candidates=1 initiator=false
+--- PASS: TestForgedPeerRecordRejected (0.00s)
+=== RUN   TestPeerRecordFromNonServerIgnored
+time=2026-10-11T13:04:53.558+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:42807 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="jqUgdsW5cfYYpHuPgsjaATQqFMaxJC/w5ItF5PnARUg=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:53.558+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:59232 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="DVQhuQS1mTOX2q6/0C8Fe7+GG9+eGO36HkLBt0bowuI=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:53.560+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:59232 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.560+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:53.560+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:42807 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+--- PASS: TestPeerRecordFromNonServerIgnored (0.00s)
+=== RUN   TestControlEnvelopeRoundTrip
+--- PASS: TestControlEnvelopeRoundTrip (0.00s)
+=== RUN   TestPeerToPeerConfigKey
+--- PASS: TestPeerToPeerConfigKey (0.00s)
+=== RUN   TestFallsBackToRelayWhenPunchingFails
+time=2026-10-11T13:04:53.562+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:58932 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="pR49GrluWtU2rT9rhsyPIw7COqqPp1jP/KPCJzt9NMs=" pq_peer_auth_required=true peers=2
+time=2026-10-11T13:04:53.562+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:44967 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="iw12MF3xX7QEJNpbkpK+MPopwr4XnplmhbuUWTwWj7M=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:53.562+05:30 level=DEBUG msg="udp write failed" peer=server err="write udp 0.0.0.0:59232->127.0.0.1:42807: use of closed network connection"
+time=2026-10-11T13:04:53.562+05:30 level=DEBUG msg="announce failed" err="write udp 0.0.0.0:59232->127.0.0.1:42807: use of closed network connection"
+time=2026-10-11T13:04:53.563+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:44206 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="/f3IsPa2JVS0lcMO+0YEgBtzCo05PS6OliQW07eNzAk=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:53.564+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:44967 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.564+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:53.564+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:58932 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.564+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:44967]
+time=2026-10-11T13:04:53.565+05:30 level=INFO msg="handshake complete (responder)" peer=bob endpoint=127.0.0.1:44206 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.565+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:44967] p2p=false
+time=2026-10-11T13:04:53.565+05:30 level=INFO msg="configured from server" address=10.8.0.3/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:53.565+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:58932 address=10.8.0.3/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:53.565+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:44206]
+time=2026-10-11T13:04:53.565+05:30 level=DEBUG msg="peer announced candidates" peer=bob local=[192.0.2.2:44206] p2p=true
+time=2026-10-11T13:04:53.566+05:30 level=INFO msg="learned a peer from the server" peer=10.8.0.3 overlay=10.8.0.3/24
+time=2026-10-11T13:04:53.566+05:30 level=INFO msg="punching to peer" peer=10.8.0.3 candidates=1 initiator=true
+time=2026-10-11T13:04:54.267+05:30 level=DEBUG msg="starting direct handshake" peer=10.8.0.3 endpoint=127.0.0.1:1
+time=2026-10-11T13:04:57.564+05:30 level=DEBUG msg="retransmitting handshake" peer=10.8.0.3 attempt=2
+time=2026-10-11T13:04:57.567+05:30 level=INFO msg="hole punching failed, staying on the relay path" peer=10.8.0.3
+--- PASS: TestFallsBackToRelayWhenPunchingFails (6.03s)
+=== RUN   TestClientRecoversAfterServerRestart
+time=2026-10-11T13:04:59.594+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:46096 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="Po19Gwq0EFfesS4VfFeqrn1+JngquGyLoK9Zl4nEeyE=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:59.595+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:35379 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="iHmYn6hoeHfe1lrxfL+kA8yElt8u6we43iFNqqO07/g=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:59.596+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:35379 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:59.597+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:04:59.597+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:46096 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:04:59.597+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:35379]
+time=2026-10-11T13:04:59.799+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:46096 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="Po19Gwq0EFfesS4VfFeqrn1+JngquGyLoK9Zl4nEeyE=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:04:59.799+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:00.300+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:00.801+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:01.302+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:01.802+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:02.304+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:02.805+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:03.305+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:03.806+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:04.307+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:04.808+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:05.309+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:05.809+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:06.310+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:06.810+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:07.311+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:07.811+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:08.312+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:08.813+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:09.314+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:09.814+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:10.315+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:10.816+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:11.317+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:11.818+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:12.319+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:12.819+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:13.319+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:13.820+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:14.321+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:14.822+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:15.323+05:30 level=DEBUG msg="transport packet for unknown session" index=622159388 src=127.0.0.1:35379
+time=2026-10-11T13:05:15.596+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+time=2026-10-11T13:05:15.598+05:30 level=INFO msg="handshake complete (responder)" peer=alice endpoint=127.0.0.1:35379 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:05:15.598+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:05:15.598+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:46096 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:05:15.598+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:35379]
+time=2026-10-11T13:05:15.598+05:30 level=DEBUG msg="peer announced candidates" peer=alice local=[192.0.2.2:35379] p2p=true
+    recovery_test.go:81: recovered 16s after the restart
+--- PASS: TestClientRecoversAfterServerRestart (16.23s)
+=== RUN   TestSharedIdentityIsReported
+time=2026-10-11T13:05:15.825+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:45544 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="vPuqynAhBTm0TuCoV/tqABuYif2sfyPtAy3ntatkfjg=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:05:15.827+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:05:15.827+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:43404 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T13:05:15.827+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:45544]
+time=2026-10-11T13:05:15.827+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:38103 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="vPuqynAhBTm0TuCoV/tqABuYif2sfyPtAy3ntatkfjg=" pq_peer_auth_required=true peers=1
+time=2026-10-11T13:05:15.828+05:30 level=INFO msg="configured from server" address=10.8.0.2/24 routes=[10.8.0.0/24] topology=subnet mtu=1420
+time=2026-10-11T13:05:15.828+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=127.0.0.1:43404 address=10.8.0.2/24 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+    recovery_test.go:116: server warned about the shared identity, as intended
+time=2026-10-11T13:05:15.828+05:30 level=DEBUG msg="announced local candidates" candidates=[192.0.2.2:38103]
+--- PASS: TestSharedIdentityIsReported (0.01s)
+PASS
+ok  	pqcvpn/internal/device	28.581s
+=== RUN   TestHandshakeRoundTrip
+--- PASS: TestHandshakeRoundTrip (0.00s)
+=== RUN   TestHandshakeSizesAreFragmented
+    handshake_test.go:129: initiation=4661 bytes in 4 fragments
+--- PASS: TestHandshakeSizesAreFragmented (0.00s)
+=== RUN   TestImpersonationWithStolenPublicKeyFails
+--- PASS: TestImpersonationWithStolenPublicKeyFails (0.00s)
+=== RUN   TestForgedPostQuantumIdentityFails
+--- PASS: TestForgedPostQuantumIdentityFails (0.00s)
+=== RUN   TestUnknownPeerRejected
+--- PASS: TestUnknownPeerRejected (0.00s)
+=== RUN   TestInitiationForAnotherServerRejected
+--- PASS: TestInitiationForAnotherServerRejected (0.00s)
+=== RUN   TestInitiationReplayRejected
+--- PASS: TestInitiationReplayRejected (0.00s)
+=== RUN   TestTamperedInitiationRejected
+--- PASS: TestTamperedInitiationRejected (0.00s)
+=== RUN   TestBadMAC1Rejected
+--- PASS: TestBadMAC1Rejected (0.00s)
+=== RUN   TestResponseForWrongSessionRejected
+--- PASS: TestResponseForWrongSessionRejected (0.00s)
+=== RUN   TestSignatureRequiredPolicy
+--- PASS: TestSignatureRequiredPolicy (0.00s)
+=== RUN   TestPeerToPeerHandshake
+--- PASS: TestPeerToPeerHandshake (0.00s)
+PASS
+ok  	pqcvpn/internal/handshake	0.023s
+=== RUN   TestAllocateSkipsNetworkBroadcastAndReserved
+--- PASS: TestAllocateSkipsNetworkBroadcastAndReserved (0.00s)
+=== RUN   TestAllocationIsSticky
+--- PASS: TestAllocationIsSticky (0.00s)
+=== RUN   TestReserve
+--- PASS: TestReserve (0.00s)
+=== RUN   TestRelease
+--- PASS: TestRelease (0.00s)
+=== RUN   TestOwnerLookup
+--- PASS: TestOwnerLookup (0.00s)
+=== RUN   TestInvalidClientMask
+--- PASS: TestInvalidClientMask (0.00s)
+PASS
+ok  	pqcvpn/internal/ipam	0.002s
+=== RUN   TestDetectDoesNotPanicAndNames
+    detect_test.go:7: detected backend on this host: iptables
+--- PASS: TestDetectDoesNotPanicAndNames (0.00s)
+PASS
+ok  	pqcvpn/internal/netfilter	0.006s
+=== RUN   TestBundleRoundTrip
+--- PASS: TestBundleRoundTrip (0.00s)
+=== RUN   TestURIRoundTrip
+--- PASS: TestURIRoundTrip (0.00s)
+=== RUN   TestCorruptionIsDetected
+=== RUN   TestCorruptionIsDetected/flipped_byte
+=== RUN   TestCorruptionIsDetected/truncated
+=== RUN   TestCorruptionIsDetected/not_a_bundle
+=== RUN   TestCorruptionIsDetected/wrong_version
+--- PASS: TestCorruptionIsDetected (0.00s)
+    --- PASS: TestCorruptionIsDetected/flipped_byte (0.00s)
+    --- PASS: TestCorruptionIsDetected/truncated (0.00s)
+    --- PASS: TestCorruptionIsDetected/not_a_bundle (0.00s)
+    --- PASS: TestCorruptionIsDetected/wrong_version (0.00s)
+=== RUN   TestConfigTextParses
+--- PASS: TestConfigTextParses (0.00s)
+=== RUN   TestConfigTextNeedsIdentity
+--- PASS: TestConfigTextNeedsIdentity (0.00s)
+=== RUN   TestQRFitsAndScales
+    bundle_test.go:213: payload: server only = 2723 bytes, with client identity = 2808 bytes
+--- PASS: TestQRFitsAndScales (0.10s)
+=== RUN   TestFingerprintMatchesIdentity
+--- PASS: TestFingerprintMatchesIdentity (0.00s)
+=== RUN   TestQROnboardingConnects
+    e2e_test.go:78: QR payload: 2715 bytes
+    e2e_test.go:147: QR-provisioned client connected and was assigned 10.8.0.2/24
+--- PASS: TestQROnboardingConnects (0.00s)
+=== RUN   TestQRFromWrongServerFails
+--- PASS: TestQRFromWrongServerFails (3.00s)
+PASS
+ok  	pqcvpn/internal/provision	3.110s
+?   	pqcvpn/internal/tun	[no test files]
+=== RUN   TestWireFormatIsByteOrderIndependent
+    vectors_test.go:15: wire format verified on linux/amd64, 64-bit, little-endian
+--- PASS: TestWireFormatIsByteOrderIndependent (0.00s)
+=== RUN   TestVectorsEncodeLittleEndianFields
+--- PASS: TestVectorsEncodeLittleEndianFields (0.00s)
+=== RUN   TestTransportHeaderRoundTrip
+--- PASS: TestTransportHeaderRoundTrip (0.00s)
+=== RUN   TestParseTransportHeaderShort
+--- PASS: TestParseTransportHeaderShort (0.00s)
+=== RUN   TestFragmentReassembleOutOfOrder
+--- PASS: TestFragmentReassembleOutOfOrder (0.00s)
+=== RUN   TestReassemblerRejectsOverlongTotal
+--- PASS: TestReassemblerRejectsOverlongTotal (0.00s)
+=== RUN   TestReassemblerDuplicateFragment
+--- PASS: TestReassemblerDuplicateFragment (0.00s)
+=== RUN   TestReassemblerExpiry
+--- PASS: TestReassemblerExpiry (0.02s)
+=== RUN   TestFragmentSingleDatagram
+--- PASS: TestFragmentSingleDatagram (0.00s)
+PASS
+ok  	pqcvpn/internal/wire	0.022s
+=== RUN   TestPrepareThenAttachPipe
+--- PASS: TestPrepareThenAttachPipe (0.00s)
+=== RUN   TestProtectRefusalIsReported
+--- PASS: TestProtectRefusalIsReported (0.00s)
+=== RUN   TestPrepareRejectsBadInput
+--- PASS: TestPrepareRejectsBadInput (0.00s)
+=== RUN   TestPrepareTimesOut
+--- PASS: TestPrepareTimesOut (1.50s)
+=== RUN   TestGenerateIdentity
+--- PASS: TestGenerateIdentity (0.00s)
+=== RUN   TestServerEndpoint
+--- PASS: TestServerEndpoint (0.00s)
+=== RUN   TestLoggerHook
+--- PASS: TestLoggerHook (0.00s)
+PASS
+ok  	pqcvpn/pkg/pqcvpn	1.521s
+TEST_EXIT=0
