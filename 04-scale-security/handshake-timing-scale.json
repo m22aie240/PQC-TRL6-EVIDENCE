@@ -1,0 +1,66 @@
+{
+  "pcap": "/home/claude/bench/results/04-scale-security/gw-underlay-scale.pcap",
+  "capture_span_s": 228.8,
+  "client_endpoints": 1289,
+  "establishments": {
+    "n": 1289,
+    "mean": 18.794,
+    "min": 0.507,
+    "p50": 3.479,
+    "p95": 23.385,
+    "p99": 523.322,
+    "max": 835.704
+  },
+  "rekeys": {
+    "n": 3021,
+    "mean": 5.042,
+    "min": 0.508,
+    "p50": 1.503,
+    "p95": 19.238,
+    "p99": 24.23,
+    "max": 30.147
+  },
+  "server_processing_ms_establish": {
+    "n": 1289,
+    "mean": 16.441,
+    "min": 0.47,
+    "p50": 3.294,
+    "p95": 21.937,
+    "p99": 446.332,
+    "max": 598.662
+  },
+  "server_processing_ms_rekey": {
+    "n": 3021,
+    "mean": 4.939,
+    "min": 0.487,
+    "p50": 1.403,
+    "p95": 19.073,
+    "p99": 23.899,
+    "max": 30.072
+  },
+  "initiations_unanswered": 237112,
+  "handshake_attempts": 241422,
+  "handshake_success_rate_pct": 1.785,
+  "initiation_message_bytes": [
+    4668,
+    4679,
+    4701,
+    4702,
+    4703
+  ],
+  "response_message_bytes": [
+    4641,
+    4642,
+    4643
+  ],
+  "initiation_fragments": [
+    4
+  ],
+  "response_fragments": [
+    4
+  ],
+  "packet_counts_by_type": {
+    "type1_c2s": 399984,
+    "type2_s2c": 17240
+  }
+}

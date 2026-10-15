@@ -1,0 +1,18 @@
+{
+  "attack": "junk",
+  "attack_datagrams_per_message": 1,
+  "attack_messages_sent": 145917,
+  "attack_rate_achieved_per_s": 4833.14235249458,
+  "attempted": 60,
+  "latency_ms_max": 4.583,
+  "latency_ms_mean": 1.684966666666667,
+  "latency_ms_min": 1.218,
+  "latency_ms_p50": 1.485,
+  "latency_ms_p95": 2.47,
+  "latency_ms_p99": 3.478,
+  "per_second": 1.987354304577949,
+  "phase": "legit-probe-under-junk",
+  "succeeded": 60,
+  "success_rate_pct": 100,
+  "wall_s": 30.190892415
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "attempted": 400,
+    "concurrency": 1,
+    "latency_ms_max": 14.74,
+    "latency_ms_mean": 1.7340500000000003,
+    "latency_ms_min": 0.985,
+    "latency_ms_p50": 1.571,
+    "latency_ms_p95": 2.466,
+    "latency_ms_p99": 6.669,
+    "per_second": 399.6764710892121,
+    "phase": "establish",
+    "succeeded": 400,
+    "success_rate_pct": 100,
+    "wall_s": 1.000809477
+  },
+  {
+    "attempted": 400,
+    "concurrency": 1,
+    "latency_ms_max": 7.39,
+    "latency_ms_mean": 1.3595924999999993,
+    "latency_ms_min": 0.952,
+    "latency_ms_p50": 1.234,
+    "latency_ms_p95": 1.938,
+    "latency_ms_p99": 3.048,
+    "per_second": 537.7701080945209,
+    "phase": "rekey-round-2",
+    "succeeded": 400,
+    "success_rate_pct": 100,
+    "wall_s": 0.743812261
+  },
+  {
+    "attempted": 400,
+    "concurrency": 1,
+    "latency_ms_max": 6.331,
+    "latency_ms_mean": 1.4851375000000004,
+    "latency_ms_min": 0.952,
+    "latency_ms_p50": 1.382,
+    "latency_ms_p95": 2.196,
+    "latency_ms_p99": 3.577,
+    "per_second": 474.3436378713527,
+    "phase": "rekey-round-3",
+    "succeeded": 400,
+    "success_rate_pct": 100,
+    "wall_s": 0.843270507
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "attack": "badmac",
+  "attack_datagrams_per_message": 4,
+  "attack_messages_sent": 59147,
+  "attack_rate_achieved_per_s": 1970.051196903244,
+  "attempted": 12,
+  "latency_ms_max": 2.547,
+  "latency_ms_mean": 1.96225,
+  "latency_ms_min": 1.715,
+  "latency_ms_p50": 1.764,
+  "latency_ms_p95": 1.823,
+  "latency_ms_p99": 1.823,
+  "per_second": 0.13323092642537873,
+  "phase": "legit-probe-under-badmac",
+  "succeeded": 4,
+  "success_rate_pct": 33.333333333333336,
+  "wall_s": 30.023059265
+}

@@ -1,0 +1,7 @@
+{
+  "fresh_handshake_after_replay_ok": true,
+  "original_handshake_ok": true,
+  "pass": true,
+  "replay_other_source_answered": false,
+  "replay_same_source_answered": false
+}

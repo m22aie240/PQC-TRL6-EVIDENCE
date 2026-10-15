@@ -1,0 +1,18 @@
+{
+  "attack": "replay",
+  "attack_datagrams_per_message": 4,
+  "attack_messages_sent": 30103,
+  "attack_rate_achieved_per_s": 996.3269457419226,
+  "attempted": 60,
+  "latency_ms_max": 6.212,
+  "latency_ms_mean": 2.0390166666666665,
+  "latency_ms_min": 1.132,
+  "latency_ms_p50": 1.69,
+  "latency_ms_p95": 4.364,
+  "latency_ms_p99": 5.883,
+  "per_second": 1.9858382409609183,
+  "phase": "legit-probe-under-replay",
+  "succeeded": 60,
+  "success_rate_pct": 100,
+  "wall_s": 30.213941278
+}

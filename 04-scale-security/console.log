@@ -1,0 +1,65 @@
+2026-10-11T08:45:05.396Z  PHASE 4 start  real clients=100  load identities=400
+2026-10-11T08:45:11.337Z  generating identities
+2026-10-11T08:45:21.430Z  server.conf peers: 500
+2026-10-11T08:45:22.252Z  --- A: starting 100 real client daemons simultaneously
+2026-10-11T08:45:27.870Z  clients with overlay address: 100 / 100   (all up in 5613 ms wall)
+2026-10-11T08:45:51.699Z  tunnel reachability c1..c100 -> 10.8.0.1: pass=100 fail=0
+2026-10-11T08:45:51.737Z  DC reachability (every 10th client): 10 / 10
+2026-10-11T08:45:51.740Z  gateway with 100 sessions: VmHWM: 34236 kB VmRSS: 34236 kB Threads: 9  
+2026-10-11T08:45:51.760Z  client c1: VmHWM: 5752 kB VmRSS: 5752 kB 
+client daemons: n=100 mean RSS=5930 kB
+2026-10-11T08:46:01.782Z  --- B: handshake load, 400 identities, concurrency 1, 3 rounds (1 establish + 2 rekey)
+{"attempted":400,"concurrency":1,"latency_ms_max":14.74,"latency_ms_mean":1.7340500000000003,"latency_ms_min":0.985,"latency_ms_p50":1.571,"latency_ms_p95":2.466,"latency_ms_p99":6.669,"per_second":399.6764710892121,"phase":"establish","succeeded":400,"success_rate_pct":100,"wall_s":1.000809477}
+{"attempted":400,"concurrency":1,"latency_ms_max":7.39,"latency_ms_mean":1.3595924999999993,"latency_ms_min":0.952,"latency_ms_p50":1.234,"latency_ms_p95":1.938,"latency_ms_p99":3.048,"per_second":537.7701080945209,"phase":"rekey-round-2","succeeded":400,"success_rate_pct":100,"wall_s":0.743812261}
+{"attempted":400,"concurrency":1,"latency_ms_max":6.331,"latency_ms_mean":1.4851375000000004,"latency_ms_min":0.952,"latency_ms_p50":1.382,"latency_ms_p95":2.196,"latency_ms_p99":3.577,"per_second":474.3436378713527,"phase":"rekey-round-3","succeeded":400,"success_rate_pct":100,"wall_s":0.843270507}
+2026-10-11T08:46:09.394Z  --- B: handshake load, 400 identities, concurrency 8, 3 rounds (1 establish + 2 rekey)
+{"attempted":400,"concurrency":8,"latency_ms_max":16.378,"latency_ms_mean":6.199232499999996,"latency_ms_min":1.149,"latency_ms_p50":5.555,"latency_ms_p95":11.377,"latency_ms_p99":14.642,"per_second":1073.7284094825638,"phase":"establish","succeeded":400,"success_rate_pct":100,"wall_s":0.372533684}
+{"attempted":400,"concurrency":8,"latency_ms_max":27.837,"latency_ms_mean":7.321419999999996,"latency_ms_min":1.449,"latency_ms_p50":6.922,"latency_ms_p95":13.87,"latency_ms_p99":17.555,"per_second":881.2064740591793,"phase":"rekey-round-2","succeeded":400,"success_rate_pct":100,"wall_s":0.453923129}
+{"attempted":400,"concurrency":8,"latency_ms_max":30.761,"latency_ms_mean":8.922352500000002,"latency_ms_min":1.317,"latency_ms_p50":8,"latency_ms_p95":19.343,"latency_ms_p99":27.831,"per_second":763.2736619596127,"phase":"rekey-round-3","succeeded":400,"success_rate_pct":100,"wall_s":0.524058434}
+2026-10-11T08:46:15.423Z  --- B: handshake load, 400 identities, concurrency 32, 3 rounds (1 establish + 2 rekey)
+{"attempted":400,"concurrency":32,"latency_ms_max":36.728,"latency_ms_mean":14.427163212435245,"latency_ms_min":1.073,"latency_ms_p50":13.738,"latency_ms_p95":25.275,"latency_ms_p99":30.491,"per_second":75.99080614561635,"phase":"establish","succeeded":386,"success_rate_pct":96.5,"wall_s":5.079561852}
+{"attempted":400,"concurrency":32,"latency_ms_max":56.031,"latency_ms_mean":18.839777777777766,"latency_ms_min":1.141,"latency_ms_p50":18.557,"latency_ms_p95":31.083,"latency_ms_p99":40.204,"per_second":76.24072535590011,"phase":"rekey-round-2","succeeded":387,"success_rate_pct":96.75,"wall_s":5.076027257}
+{"attempted":400,"concurrency":32,"latency_ms_max":42.073,"latency_ms_mean":16.980297927461127,"latency_ms_min":1.211,"latency_ms_p50":17.31,"latency_ms_p95":28.149,"latency_ms_p99":37.642,"per_second":75.776060434601,"phase":"rekey-round-3","succeeded":386,"success_rate_pct":96.5,"wall_s":5.093957086}
+2026-10-11T08:46:35.340Z  gateway after load: VmHWM: 51000 kB VmRSS: 51000 kB Threads: 9  
+2026-10-11T08:46:35.696Z  real clients still reachable after load: 100 / 100
+2026-10-11T08:46:35.698Z  --- C1: handshake (initiation) replay
+original initiation answered: true
+replayed initiation (same source) answered: false
+replayed initiation (other source) answered: false
+fresh handshake afterwards ok: true
+    time=2026-10-11T14:16:36.007+05:30 level=WARN msg="rejected initiation" src=172.30.0.250:44570 err="pqcvpn/handshake: replayed or stale initiation"
+    time=2026-10-11T14:16:39.008+05:30 level=WARN msg="rejected initiation" src=172.30.0.250:54872 err="pqcvpn/handshake: replayed or stale initiation"
+2026-10-11T08:46:42.019Z  --- C2: transport packet replay (captured encrypted ICMP from c1 re-injected from 172.30.0.250)
+20 packets transmitted, 20 received, 0% packet loss, time 1976ms
+rtt min/avg/max/mdev = 0.361/0.480/1.055/0.143 ms
+{"captured_candidates": 16, "datagrams_reinjected": 80, "payload_len": 116}
+2026-10-11T08:46:50.517Z  gateway log 'replayed or stale packet' events from replay: 80
+2026-10-11T08:46:50.533Z  ICMP echo requests from 10.8.0.3 delivered to gateway TUN (expect 20, replays must add 0): 20
+2026-10-11T08:46:50.535Z  --- D: flood attack=junk rate=20000 msg/s for 30 s; legit probe handshakes every 0.5 s; c1 ping 10/s
+{"attack":"junk","attack_datagrams_per_message":1,"attack_messages_sent":145917,"attack_rate_achieved_per_s":4833.14235249458,"attempted":60,"latency_ms_max":4.583,"latency_ms_mean":1.684966666666667,"latency_ms_min":1.218,"latency_ms_p50":1.485,"latency_ms_p95":2.47,"latency_ms_p99":3.478,"per_second":1.987354304577949,"phase":"legit-probe-under-junk","succeeded":60,"success_rate_pct":100,"wall_s":30.190892415}
+    290 packets transmitted, 290 received, 0% packet loss, time 30137ms
+    rtt min/avg/max/mdev = 0.146/0.345/6.510/0.408 ms
+    gateway cpu mean 7% max 14%
+2026-10-11T08:47:25.946Z  --- D: flood attack=badmac rate=2000 msg/s for 30 s; legit probe handshakes every 0.5 s; c1 ping 10/s
+{"attack":"badmac","attack_datagrams_per_message":4,"attack_messages_sent":59147,"attack_rate_achieved_per_s":1970.051196903244,"attempted":12,"latency_ms_max":2.547,"latency_ms_mean":1.96225,"latency_ms_min":1.715,"latency_ms_p50":1.764,"latency_ms_p95":1.823,"latency_ms_p99":1.823,"per_second":0.13323092642537873,"phase":"legit-probe-under-badmac","succeeded":4,"success_rate_pct":33.333333333333336,"wall_s":30.023059265}
+    290 packets transmitted, 290 received, 0% packet loss, time 29964ms
+    rtt min/avg/max/mdev = 0.141/0.521/9.435/0.671 ms
+    gateway cpu mean 47% max 53%
+2026-10-11T08:48:01.297Z  --- D: flood attack=replay rate=200 msg/s for 30 s; legit probe handshakes every 0.5 s; c1 ping 10/s
+{"attack":"replay","attack_datagrams_per_message":4,"attack_messages_sent":6040,"attack_rate_achieved_per_s":199.96981711863307,"attempted":60,"latency_ms_max":12.54,"latency_ms_mean":1.9509166666666669,"latency_ms_min":1.194,"latency_ms_p50":1.566,"latency_ms_p95":2.54,"latency_ms_p99":10.011,"per_second":1.9864578043108232,"phase":"legit-probe-under-replay","succeeded":60,"success_rate_pct":100,"wall_s":30.204517745}
+    290 packets transmitted, 290 received, 0% packet loss, time 30115ms
+    rtt min/avg/max/mdev = 0.191/0.502/17.949/1.284 ms
+    gateway cpu mean 6% max 8%
+2026-10-11T08:48:36.947Z  --- D: flood attack=replay rate=1000 msg/s for 30 s; legit probe handshakes every 0.5 s; c1 ping 10/s
+{"attack":"replay","attack_datagrams_per_message":4,"attack_messages_sent":30103,"attack_rate_achieved_per_s":996.3269457419226,"attempted":60,"latency_ms_max":6.212,"latency_ms_mean":2.0390166666666665,"latency_ms_min":1.132,"latency_ms_p50":1.69,"latency_ms_p95":4.364,"latency_ms_p99":5.883,"per_second":1.9858382409609183,"phase":"legit-probe-under-replay","succeeded":60,"success_rate_pct":100,"wall_s":30.213941278}
+    290 packets transmitted, 290 received, 0% packet loss, time 30100ms
+    rtt min/avg/max/mdev = 0.165/0.366/4.639/0.398 ms
+    gateway cpu mean 24% max 29%
+2026-10-11T08:49:12.453Z  gateway warnings by kind:
+    807 level=WARN msg="peer re-handshaked from a different address while a session was live; if this repeats, two devices are probably sharing one identity"
+  36143 level=WARN msg="rejected initiation"
+ 212957 err="pqcvpn/wire: handshake message too large"
+  36143 err="pqcvpn/handshake: replayed or stale initiation"
+     80 err="pqcvpn/crypto: replayed or stale packet"
+{'client_endpoints': 1289, 'establishments': {'n': 1289, 'mean': 18.794, 'min': 0.507, 'p50': 3.479, 'p95': 23.385, 'p99': 523.322, 'max': 835.704}, 'rekeys': {'n': 3021, 'mean': 5.042, 'min': 0.508, 'p50': 1.503, 'p95': 19.238, 'p99': 24.23, 'max': 30.147}, 'handshake_success_rate_pct': 1.785, 'initiations_unanswered': 237112}
+2026-10-11T08:49:16.009Z  PHASE 4 done

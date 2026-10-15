@@ -1,0 +1,35 @@
+time=2026-10-11T14:15:22.756+05:30 level=INFO msg="pqcvpn client: key exchange X25519 + ML-KEM-768 (Kyber), hybrid; identity ML-DSA-65 (Dilithium); transport ChaCha20-Poly1305; transcript SHA-256"
+time=2026-10-11T14:15:22.872+05:30 level=INFO msg="loaded configuration" path=/home/claude/bench/keys/c50.conf mode=client identity="Zv7I8hZQwMSbie1yKrQ3IFJ9FGLPx0PeJYQYXGdBdPc=" tenants=0 peers=1
+time=2026-10-11T14:15:22.873+05:30 level=INFO msg="post-quantum VPN starting" mode=client listen=0.0.0.0:50050 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="Zv7I8hZQwMSbie1yKrQ3IFJ9FGLPx0PeJYQYXGdBdPc=" pq_peer_auth_required=true peers=1
+time=2026-10-11T14:15:23.540+05:30 level=INFO msg="configured from server" address=10.8.0.34/16 routes="[10.8.0.0/16 10.50.0.0/24]" topology=subnet mtu=1420
+time=2026-10-11T14:15:23.540+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.34/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:15:23.540+05:30 level=DEBUG msg="announced local candidates" candidates=[172.30.1.60:50050]
+time=2026-10-11T14:15:23.540+05:30 level=INFO msg=running device=pqc0 mtu=1420 overhead=32
+time=2026-10-11T14:17:23.891+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+time=2026-10-11T14:17:23.894+05:30 level=INFO msg="configured from server" address=10.8.0.34/16 routes="[10.8.0.0/16 10.50.0.0/24]" topology=subnet mtu=1420
+time=2026-10-11T14:17:23.894+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.34/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:17:23.894+05:30 level=DEBUG msg="announced local candidates" candidates=[172.30.1.60:50050]
+time=2026-10-11T14:17:24.891+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+time=2026-10-11T14:17:24.894+05:30 level=INFO msg="configured from server" address=10.8.0.34/16 routes="[10.8.0.0/16 10.50.0.0/24]" topology=subnet mtu=1420
+time=2026-10-11T14:17:24.894+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.34/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:17:24.894+05:30 level=DEBUG msg="announced local candidates" candidates=[172.30.1.60:50050]
+time=2026-10-11T14:17:51.892+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+time=2026-10-11T14:17:53.216+05:30 level=DEBUG msg="transport packet for unknown session" index=1566892923 src=172.30.0.1:51820
+time=2026-10-11T14:17:55.891+05:30 level=DEBUG msg="retransmitting handshake" peer=server attempt=2
+time=2026-10-11T14:17:59.892+05:30 level=DEBUG msg="retransmitting handshake" peer=server attempt=3
+time=2026-10-11T14:17:59.896+05:30 level=INFO msg="configured from server" address=10.8.0.34/16 routes="[10.8.0.0/16 10.50.0.0/24]" topology=subnet mtu=1420
+time=2026-10-11T14:17:59.896+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.34/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:17:59.896+05:30 level=DEBUG msg="announced local candidates" candidates=[172.30.1.60:50050]
+time=2026-10-11T14:18:07.891+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+time=2026-10-11T14:18:07.893+05:30 level=INFO msg="configured from server" address=10.8.0.34/16 routes="[10.8.0.0/16 10.50.0.0/24]" topology=subnet mtu=1420
+time=2026-10-11T14:18:07.894+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.34/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:18:07.894+05:30 level=DEBUG msg="announced local candidates" candidates=[172.30.1.60:50050]
+time=2026-10-11T14:18:34.892+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+time=2026-10-11T14:18:34.895+05:30 level=INFO msg="configured from server" address=10.8.0.34/16 routes="[10.8.0.0/16 10.50.0.0/24]" topology=subnet mtu=1420
+time=2026-10-11T14:18:34.895+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.34/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:18:34.896+05:30 level=DEBUG msg="announced local candidates" candidates=[172.30.1.60:50050]
+time=2026-10-11T14:19:01.892+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+time=2026-10-11T14:19:01.905+05:30 level=INFO msg="configured from server" address=10.8.0.34/16 routes="[10.8.0.0/16 10.50.0.0/24]" topology=subnet mtu=1420
+time=2026-10-11T14:19:01.905+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.34/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:19:01.906+05:30 level=DEBUG msg="announced local candidates" candidates=[172.30.1.60:50050]
+/home/claude/bench/tools/lib.sh: line 15: 20125 Killed                  ip netns exec "$ns" "$@"
