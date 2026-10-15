@@ -1,0 +1,64 @@
+{
+  "pcap": "/home/claude/bench/results/02-voice-rekey/gw-underlay-voice-rekey.pcap",
+  "capture_span_s": 492.0,
+  "client_endpoints": 2,
+  "establishments": {
+    "n": 2,
+    "mean": 11.072,
+    "min": 3.378,
+    "p50": 3.378,
+    "p95": 3.378,
+    "p99": 3.378,
+    "max": 18.766
+  },
+  "rekeys": {
+    "n": 18,
+    "mean": 1.147,
+    "min": 0.646,
+    "p50": 0.955,
+    "p95": 1.884,
+    "p99": 1.884,
+    "max": 3.251
+  },
+  "server_processing_ms_establish": {
+    "n": 2,
+    "mean": 9.271,
+    "min": 1.117,
+    "p50": 1.117,
+    "p95": 1.117,
+    "p99": 1.117,
+    "max": 17.425
+  },
+  "server_processing_ms_rekey": {
+    "n": 18,
+    "mean": 1.0,
+    "min": 0.621,
+    "p50": 0.83,
+    "p95": 1.808,
+    "p99": 1.808,
+    "max": 1.916
+  },
+  "initiations_unanswered": 0,
+  "handshake_attempts": 20,
+  "handshake_success_rate_pct": 100.0,
+  "initiation_message_bytes": [
+    4679,
+    4701
+  ],
+  "response_message_bytes": [
+    4641
+  ],
+  "initiation_fragments": [
+    4
+  ],
+  "response_fragments": [
+    4
+  ],
+  "packet_counts_by_type": {
+    "type1_c2s": 80,
+    "type2_s2c": 80,
+    "type4_s2c": 1107325,
+    "type4_c2s": 3498015,
+    "type5_c2s": 20
+  }
+}

@@ -1,0 +1,148 @@
+2026-10-11T07:54:38.778Z  PHASE 2 start
+2026-10-11T07:54:40.367Z  c1 addr 10.8.0.3
+2026-10-11T07:54:40.375Z  c2 addr 10.8.0.2
+2026-10-11T07:54:40.382Z  --- V1 unprotected baseline: c1 -> 172.30.0.1:40000, 120 s, 50 pps x 172 B
+{"sent": 6000, "duration_s": 120.0}
+{
+  "label": "unprotected",
+  "expected": 6000,
+  "received": 6000,
+  "lost": 0,
+  "loss_pct": 0.0,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.1985,
+  "one_way_ms_min": 0.0363,
+  "one_way_ms_p50": 0.094,
+  "one_way_ms_p95": 0.2804,
+  "one_way_ms_p99": 2.4507,
+  "one_way_ms_max": 29.5463,
+  "jitter_rfc3550_ms_final": 0.0442,
+  "jitter_rfc3550_ms_mean": 0.2118,
+  "jitter_rfc3550_ms_max": 3.6453,
+  "max_interarrival_gap_ms": 49.485,
+  "max_gap_start_ns": 1791705284512446766,
+  "max_gap_end_ns": 1791705284561931304
+}2026-10-11T07:56:44.413Z  --- V2/V3 protected, both directions, 300 s (spans >= 2 scheduled rekeys at 120 s)
+{
+  "label": "protected-c2g",
+  "expected": 15000,
+  "received": 15000,
+  "lost": 0,
+  "loss_pct": 0.0,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2019,
+  "one_way_ms_min": 0.0562,
+  "one_way_ms_p50": 0.1402,
+  "one_way_ms_p95": 0.2581,
+  "one_way_ms_p99": 1.1625,
+  "one_way_ms_max": 48.1484,
+  "jitter_rfc3550_ms_final": 0.271,
+  "jitter_rfc3550_ms_mean": 0.1462,
+  "jitter_rfc3550_ms_max": 5.8995,
+  "max_interarrival_gap_ms": 68.031,
+  "max_gap_start_ns": 1791705554782759418,
+  "max_gap_end_ns": 1791705554850790269
+}{
+  "label": "protected-g2c",
+  "expected": 15000,
+  "received": 15000,
+  "lost": 0,
+  "loss_pct": 0.0,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.2741,
+  "one_way_ms_min": 0.0595,
+  "one_way_ms_p50": 0.2007,
+  "one_way_ms_p95": 0.3264,
+  "one_way_ms_p99": 1.7933,
+  "one_way_ms_max": 49.1065,
+  "jitter_rfc3550_ms_final": 0.5119,
+  "jitter_rfc3550_ms_mean": 0.1859,
+  "jitter_rfc3550_ms_max": 6.069,
+  "max_interarrival_gap_ms": 68.884,
+  "max_gap_start_ns": 1791705554781965845,
+  "max_gap_end_ns": 1791705554850849455
+}2026-10-11T08:01:48.470Z  --- V4 protected voice c1 -> DC host 10.50.0.10 while c2 saturates the gateway with iperf3 (60 s)
+{
+  "label": "protected-to-dc-under-load",
+  "expected": 3000,
+  "received": 2802,
+  "lost": 198,
+  "loss_pct": 6.6,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.6075,
+  "one_way_ms_min": 0.0605,
+  "one_way_ms_p50": 0.2793,
+  "one_way_ms_p95": 2.2288,
+  "one_way_ms_p99": 4.2548,
+  "one_way_ms_max": 12.7254,
+  "jitter_rfc3550_ms_final": 1.0288,
+  "jitter_rfc3550_ms_mean": 0.675,
+  "jitter_rfc3550_ms_max": 2.0873,
+  "max_interarrival_gap_ms": 80.0,
+  "max_gap_start_ns": 1791705749189173416,
+  "max_gap_end_ns": 1791705749269173213
+}2026-10-11T08:02:54.042Z  --- rekey events in logs
+    time=2026-10-11T13:26:41.255+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:26:42.255+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:28:43.255+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:30:44.259+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:32:01.256+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:32:26.256+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:32:52.256+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:26:41.254+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:26:42.254+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:27:09.253+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:27:36.253+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:28:03.253+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:28:30.254+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:28:57.253+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:29:24.253+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:29:51.254+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:30:18.253+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T13:32:19.253+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+{
+  "pcap": "/home/claude/bench/results/02-voice-rekey/gw-underlay-voice-rekey.pcap",
+  "capture_span_s": 492.0,
+  "client_endpoints": 2,
+  "establishments": {
+    "n": 2,
+    "mean": 11.072,
+    "min": 3.378,
+    "p50": 3.378,
+    "p95": 3.378,
+    "p99": 3.378,
+    "max": 18.766
+  },
+  "rekeys": {
+    "n": 18,
+    "mean": 1.147,
+    "min": 0.646,
+    "p50": 0.955,
+    "p95": 1.884,
+    "p99": 1.884,
+    "max": 3.251
+  },
+  "server_processing_ms_establish": {
+    "n": 2,
+    "mean": 9.271,
+    "min": 1.117,
+    "p50": 1.117,
+    "p95": 1.117,
+    "p99": 1.117,
+    "max": 17.425
+  },
+  "server_processing_ms_rekey": {
+    "n": 18,
+    "mean": 1.0,
+    "min": 0.621,
+    "p50": 0.83,
+    "p95": 1.808,
+    "p99": 1.808,
+    "max": 1.916
+  },
+2026-10-11T08:03:02.364Z  gateway RSS: VmHWM: 11080 kB VmRSS: 10788 kB 
+2026-10-11T08:03:02.365Z  PHASE 2 done

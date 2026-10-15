@@ -1,0 +1,21 @@
+{
+  "label": "protected-to-dc-under-load",
+  "expected": 3000,
+  "received": 2802,
+  "lost": 198,
+  "loss_pct": 6.6,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.6075,
+  "one_way_ms_min": 0.0605,
+  "one_way_ms_p50": 0.2793,
+  "one_way_ms_p95": 2.2288,
+  "one_way_ms_p99": 4.2548,
+  "one_way_ms_max": 12.7254,
+  "jitter_rfc3550_ms_final": 1.0288,
+  "jitter_rfc3550_ms_mean": 0.675,
+  "jitter_rfc3550_ms_max": 2.0873,
+  "max_interarrival_gap_ms": 80.0,
+  "max_gap_start_ns": 1791705749189173416,
+  "max_gap_end_ns": 1791705749269173213
+}
