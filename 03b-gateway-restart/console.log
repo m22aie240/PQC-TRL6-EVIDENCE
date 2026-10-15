@@ -1,0 +1,108 @@
+2026-10-11T08:28:05.278Z  PHASE 3b start
+2026-10-11T08:28:06.890Z  c1 addr 10.8.0.2
+2026-10-11T08:28:06.898Z  --- G2: gateway restart (kill -9, restart after 2 s), client holds an initiator session, 120 s window
+2026-10-11T08:28:22.406Z  EVENT G2 down
+2026-10-11T08:28:24.417Z  EVENT G2 up
+2026-10-11T08:30:31.447Z  --- G3 setup: 190 s bearer outage so both session copies expire and the gateway re-initiates
+2026-10-11T08:30:41.955Z  EVENT G3pre down
+2026-10-11T08:33:51.964Z  EVENT G3pre up
+    time=2026-10-11T14:00:38.783+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.2/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+    time=2026-10-11T14:03:52.221+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.2/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+2026-10-11T08:34:10.983Z  --- G3: gateway restart while the client holds a RESPONDER session, 200 s window
+2026-10-11T08:34:26.494Z  EVENT G3 down
+2026-10-11T08:34:28.505Z  EVENT G3 up
+2026-10-11T08:37:51.545Z  --- analysis
+{
+  "G2": {
+    "up": {
+      "interruption_gap_ms": 15400.1,
+      "recovery_after_restore_ms": 13371.4,
+      "lost_packets": 768,
+      "loss_pct": 10.9714,
+      "max_gap_ms": 15378.742
+    },
+    "down": {
+      "interruption_gap_ms": 15400.1,
+      "recovery_after_restore_ms": 13374.8,
+      "lost_packets": 768,
+      "loss_pct": 10.9714,
+      "max_gap_ms": 15380.016
+    },
+    "outage_imposed_ms": 2010.9
+  },
+  "G3pre": {
+    "up": {
+      "interruption_gap_ms": 190283.0,
+      "recovery_after_restore_ms": 259.1,
+      "lost_packets": 9482,
+      "loss_pct": 88.2047,
+      "max_gap_ms": 190283.045
+    },
+    "down": {
+      "interruption_gap_ms": 190280.6,
+      "recovery_after_restore_ms": 259.4,
+      "lost_packets": 9482,
+      "loss_pct": 88.2047,
+      "max_gap_ms": 190280.593
+    },
+    "outage_imposed_ms": 190009.1
+  },
+  "G3": {
+    "up": {
+      "interruption_gap_ms": 15320.1,
+      "recovery_after_restore_ms": 13292.2,
+      "lost_packets": 764,
+      "loss_pct": 7.107,
+      "max_gap_ms": 15296.198
+    },
+    "down": {
+      "interruption_gap_ms": 15320.0,
+      "recovery_after_restore_ms": 13293.0,
+      "lost_packets": 764,
+      "loss_pct": 7.107,
+      "max_gap_ms": 15297.082
+    },
+    "outage_imposed_ms": 2011.1
+  }
+}
+    time=2026-10-11T14:03:17.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:18.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:19.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:20.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:21.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:22.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:23.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:24.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:25.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:26.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:27.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:28.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:29.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:30.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:31.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:32.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:33.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:34.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:35.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:36.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:37.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:38.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:39.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:40.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:41.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:42.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:43.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:44.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:45.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:46.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:47.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:48.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:49.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:50.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:51.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:03:52.221+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.2/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+    time=2026-10-11T14:04:41.780+05:30 level=INFO msg="no response from peer, starting a fresh handshake" peer=server silent_for=15s
+    time=2026-10-11T14:04:41.783+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.2/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+    time=2026-10-11T14:06:42.780+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T14:06:42.783+05:30 level=INFO msg="handshake complete (initiator)" peer=server endpoint=172.30.0.1:51820 address=10.8.0.2/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+2026-10-11T08:37:51.634Z  PHASE 3b done

@@ -1,0 +1,64 @@
+{
+  "pcap": "gw-underlay-establish.pcap",
+  "capture_span_s": 66.1,
+  "client_endpoints": 3,
+  "establishments": {
+    "n": 3,
+    "mean": 1.421,
+    "min": 0.824,
+    "p50": 1.635,
+    "p95": 1.635,
+    "p99": 1.635,
+    "max": 1.803
+  },
+  "rekeys": {
+    "n": 2,
+    "mean": 1.13,
+    "min": 1.076,
+    "p50": 1.076,
+    "p95": 1.076,
+    "p99": 1.076,
+    "max": 1.183
+  },
+  "server_processing_ms_establish": {
+    "n": 3,
+    "mean": 0.95,
+    "min": 0.73,
+    "p50": 0.807,
+    "p95": 0.807,
+    "p99": 0.807,
+    "max": 1.314
+  },
+  "server_processing_ms_rekey": {
+    "n": 2,
+    "mean": 1.03,
+    "min": 0.947,
+    "p50": 0.947,
+    "p95": 0.947,
+    "p99": 0.947,
+    "max": 1.113
+  },
+  "initiations_unanswered": 0,
+  "handshake_attempts": 5,
+  "handshake_success_rate_pct": 100.0,
+  "initiation_message_bytes": [
+    4679,
+    4701
+  ],
+  "response_message_bytes": [
+    4641
+  ],
+  "initiation_fragments": [
+    4
+  ],
+  "response_fragments": [
+    4
+  ],
+  "packet_counts_by_type": {
+    "type1_c2s": 20,
+    "type2_s2c": 20,
+    "type4_s2c": 1518,
+    "type4_c2s": 1515,
+    "type5_c2s": 5
+  }
+}

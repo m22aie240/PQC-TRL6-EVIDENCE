@@ -1,0 +1,68 @@
+2026-10-11T07:50:00.101Z  PHASE 1 start  host=vm kernel=6.18.44-fc-v114 cpus=2
+2026-10-11T07:50:00.110Z  binary sha256 70592ae8533e59121bc1faed0b83c8e2cb5b73ff25724340a11171e6b90d7f47
+2026-10-11T07:50:01.009Z  underlay check
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 0.062/1.378/2.694/1.316 ms
+2026-10-11T07:50:02.721Z  starting gateway
+2026-10-11T07:50:03.432Z  starting client c1
+2026-10-11T07:50:03.434Z  starting client c2
+2026-10-11T07:50:03.435Z  starting client c3
+2026-10-11T07:50:03.455Z  c1 overlay address 10.8.0.2
+2026-10-11T07:50:03.463Z  c2 overlay address 10.8.0.3
+2026-10-11T07:50:03.473Z  c3 overlay address 10.8.0.4
+2026-10-11T07:50:03.474Z  --- functional reachability over the tunnel
+3 packets transmitted, 3 received, 0% packet loss, time 2019ms
+rtt min/avg/max/mdev = 0.377/1.524/3.663/1.513 ms
+3 packets transmitted, 3 received, 0% packet loss, time 2043ms
+rtt min/avg/max/mdev = 0.467/0.533/0.663/0.091 ms
+3 packets transmitted, 3 received, 0% packet loss, time 2005ms
+rtt min/avg/max/mdev = 0.541/0.737/1.038/0.216 ms
+    c1 route: 10.8.0.0/16 dev pqc0 
+    c1 route: 10.50.0.0/24 dev pqc0 
+    c1 route: 172.30.0.0/16 dev eth0 proto kernel scope link src 172.30.1.11 
+    2: pqc0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1420 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 500
+        link/none  promiscuity 0  allmulti 0 minmtu 68 maxmtu 65535 
+        tun type tun pi off vnet_hdr off persist off numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 tso_max_size 65536 tso_max_segs 65535 gro_max_size 65536 
+2026-10-11T07:50:09.570Z  --- RTT: unprotected underlay vs protected tunnel (500 x 56B, 20 ms interval)
+2026-10-11T07:51:09.524Z  rtt-protected-1200B.txt: 500 packets transmitted, 500 received, 0% packet loss, time 12008ms rtt min/avg/max/mdev = 0.139/0.327/9.943/0.520 ms 
+2026-10-11T07:51:09.529Z  rtt-protected-56B.txt: 500 packets transmitted, 500 received, 0% packet loss, time 11949ms rtt min/avg/max/mdev = 0.103/0.422/15.984/0.996 ms 
+2026-10-11T07:51:09.535Z  rtt-protected-to-dc-56B.txt: 500 packets transmitted, 500 received, 0% packet loss, time 11964ms rtt min/avg/max/mdev = 0.121/0.341/7.710/0.440 ms 
+2026-10-11T07:51:09.540Z  rtt-unprotected-1200B.txt: 500 packets transmitted, 500 received, 0% packet loss, time 12000ms rtt min/avg/max/mdev = 0.006/0.028/0.319/0.015 ms 
+2026-10-11T07:51:09.545Z  rtt-unprotected-56B.txt: 500 packets transmitted, 500 received, 0% packet loss, time 12006ms rtt min/avg/max/mdev = 0.006/0.024/0.137/0.010 ms 
+2026-10-11T07:51:11.565Z  --- DC application access (HTTP on 10.50.0.10:8080 through the gateway)
+index: http=200 bytes=71 time=0.021494s
+dataset: http=200 bytes=20000000 time=0.465515s speed=42963169B/s
+dataset sha256 server: e3d1cacc3037f8e80c3e61fd273442bea21c606af7c9ca40034c9e65c285377b
+dataset sha256 client: e3d1cacc3037f8e80c3e61fd273442bea21c606af7c9ca40034c9e65c285377b
+marker string in UNDERLAY pcap (must be 0): 0
+marker string in DC-side pcap (expected >0): 1
+non-51820 packets in underlay pcap: 0
+Serving HTTP on 0.0.0.0 port 8080 (http://0.0.0.0:8080/) ...
+10.8.0.2 - - [11/Oct/2026 07:51:14] "GET /index.html HTTP/1.1" 200 -
+10.8.0.2 - - [11/Oct/2026 07:51:14] "GET /dataset.bin HTTP/1.1" 200 -
+2026-10-11T07:51:16.746Z  --- throughput: iperf3 TCP 20 s, unprotected vs protected, with CPU/RSS sampling
+2026-10-11T07:51:17.780Z  pids gateway=6219 c1=6233
+2026-10-11T07:53:05.888Z  --- gateway aggregate: c1,c2,c3 concurrently to the gateway, 20 s
+iperf-agg-c1.json                            236.6 Mbit/s  retrans=143315  loss=-  host_cpu=0% remote_cpu=7%
+iperf-agg-c2.json                            160.8 Mbit/s  retrans=99995  loss=-  host_cpu=0% remote_cpu=5%
+iperf-agg-c3.json                            284.3 Mbit/s  retrans=167464  loss=-  host_cpu=0% remote_cpu=8%
+iperf-tcp-protected-down.json                675.3 Mbit/s  retrans=247339  loss=-  host_cpu=10% remote_cpu=3%
+iperf-tcp-protected-up.json                  589.3 Mbit/s  retrans=212892  loss=-  host_cpu=1% remote_cpu=17%
+iperf-tcp-unprotected-down.json             7086.8 Mbit/s  retrans=2618  loss=-  host_cpu=44% remote_cpu=96%
+iperf-tcp-unprotected.json                  6541.7 Mbit/s  retrans=3309  loss=-  host_cpu=96% remote_cpu=44%
+iperf-udp-protected.json                     237.3 Mbit/s  retrans=-  loss=96.5251440982374  host_cpu=51% remote_cpu=47%
+2026-10-11T07:53:28.402Z  gateway counters
+3: pqc0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1420 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 500
+    link/none 
+    RX:  bytes packets errors dropped  missed   mcast           
+    4035315298 3188814      0       0       0       0 
+    TX:  bytes packets errors dropped carrier collsns           
+    2180011685 2432909      0    5528       0       0 
+17: eth0@if18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 86:f4:44:26:a1:38 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    RX:   bytes  packets errors dropped  missed   mcast           
+    23546627500 16400667      0       0       0       0 
+    TX:   bytes  packets errors dropped carrier collsns           
+    20916543367 15071981      0       0       0       0 
+2026-10-11T07:53:28.417Z  gateway RSS after phase: VmHWM: 11272 kB VmRSS: 10972 kB 
+2026-10-11T07:53:28.419Z  PHASE 1 done

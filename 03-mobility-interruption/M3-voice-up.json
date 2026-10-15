@@ -1,0 +1,21 @@
+{
+  "label": "M3-up",
+  "expected": 2000,
+  "received": 2000,
+  "lost": 0,
+  "loss_pct": 0.0,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.3069,
+  "one_way_ms_min": 0.0841,
+  "one_way_ms_p50": 0.2499,
+  "one_way_ms_p95": 0.3999,
+  "one_way_ms_p99": 1.781,
+  "one_way_ms_max": 10.093,
+  "jitter_rfc3550_ms_final": 0.4089,
+  "jitter_rfc3550_ms_mean": 0.1519,
+  "jitter_rfc3550_ms_max": 1.5205,
+  "max_interarrival_gap_ms": 36.001,
+  "max_gap_start_ns": 1791706664592297980,
+  "max_gap_end_ns": 1791706664628298957
+}

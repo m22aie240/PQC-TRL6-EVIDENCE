@@ -1,0 +1,21 @@
+{
+  "label": "G1-down",
+  "expected": 3000,
+  "received": 750,
+  "lost": 2250,
+  "loss_pct": 75.0,
+  "duplicates": 0,
+  "reordered": 0,
+  "one_way_ms_mean": 0.179,
+  "one_way_ms_min": 0.066,
+  "one_way_ms_p50": 0.1489,
+  "one_way_ms_p95": 0.2594,
+  "one_way_ms_p99": 0.8281,
+  "one_way_ms_max": 4.4824,
+  "jitter_rfc3550_ms_final": 0.0666,
+  "jitter_rfc3550_ms_mean": 0.0812,
+  "jitter_rfc3550_ms_max": 0.6467,
+  "max_interarrival_gap_ms": 25.12,
+  "max_gap_start_ns": 1791707154819834370,
+  "max_gap_end_ns": 1791707154844954234
+}

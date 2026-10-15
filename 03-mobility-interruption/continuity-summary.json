@@ -1,0 +1,118 @@
+{
+  "M1": {
+    "up": {
+      "interruption_gap_ms": 20.8,
+      "recovery_after_restore_ms": 15.8,
+      "lost_packets": 0,
+      "loss_pct": 0.0,
+      "max_gap_ms": 42.004
+    },
+    "down": {
+      "interruption_gap_ms": 40.0,
+      "recovery_after_restore_ms": 35.7,
+      "lost_packets": 1,
+      "loss_pct": 0.05,
+      "max_gap_ms": 40.014
+    }
+  },
+  "M2": {
+    "up": {
+      "interruption_gap_ms": 20.2,
+      "recovery_after_restore_ms": 1.0,
+      "lost_packets": 0,
+      "loss_pct": 0.0,
+      "max_gap_ms": 49.631
+    },
+    "down": {
+      "interruption_gap_ms": 39.9,
+      "recovery_after_restore_ms": 29.1,
+      "lost_packets": 1,
+      "loss_pct": 0.05,
+      "max_gap_ms": 51.092
+    }
+  },
+  "M3": {
+    "up": {
+      "interruption_gap_ms": 20.1,
+      "recovery_after_restore_ms": 8.3,
+      "lost_packets": 0,
+      "loss_pct": 0.0,
+      "max_gap_ms": 36.001
+    },
+    "down": {
+      "interruption_gap_ms": 20.0,
+      "recovery_after_restore_ms": 9.0,
+      "lost_packets": 0,
+      "loss_pct": 0.0,
+      "max_gap_ms": 40.308
+    }
+  },
+  "I1": {
+    "up": {
+      "interruption_gap_ms": 5040.2,
+      "recovery_after_restore_ms": 11.8,
+      "lost_packets": 218,
+      "loss_pct": 5.8133,
+      "max_gap_ms": 5020.153
+    },
+    "down": {
+      "interruption_gap_ms": 6720.1,
+      "recovery_after_restore_ms": 1693.1,
+      "lost_packets": 334,
+      "loss_pct": 8.9067,
+      "max_gap_ms": 6700.036
+    },
+    "outage_imposed_ms": 5010.7
+  },
+  "I2": {
+    "up": {
+      "interruption_gap_ms": 30040.3,
+      "recovery_after_restore_ms": 15.2,
+      "lost_packets": 1468,
+      "loss_pct": 29.36,
+      "max_gap_ms": 30020.399
+    },
+    "down": {
+      "interruption_gap_ms": 31180.1,
+      "recovery_after_restore_ms": 1156.2,
+      "lost_packets": 1558,
+      "loss_pct": 31.16,
+      "max_gap_ms": 31180.117
+    },
+    "outage_imposed_ms": 30009.9
+  },
+  "I3": {
+    "up": {
+      "interruption_gap_ms": 200243.0,
+      "recovery_after_restore_ms": 226.6,
+      "lost_packets": 9980,
+      "loss_pct": 73.9259,
+      "max_gap_ms": 200243.029
+    },
+    "down": {
+      "interruption_gap_ms": 200243.4,
+      "recovery_after_restore_ms": 227.0,
+      "lost_packets": 9980,
+      "loss_pct": 73.9259,
+      "max_gap_ms": 200243.385
+    },
+    "outage_imposed_ms": 200010.5
+  },
+  "G1": {
+    "up": {
+      "interruption_gap_ms": null,
+      "recovery_after_restore_ms": null,
+      "lost_packets": 2250,
+      "loss_pct": 75.0,
+      "max_gap_ms": 33.24
+    },
+    "down": {
+      "interruption_gap_ms": null,
+      "recovery_after_restore_ms": null,
+      "lost_packets": 2250,
+      "loss_pct": 75.0,
+      "max_gap_ms": 25.12
+    },
+    "outage_imposed_ms": 2014.8
+  }
+}

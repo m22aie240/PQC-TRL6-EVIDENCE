@@ -1,0 +1,18 @@
+{
+  "attack": "frag1",
+  "attack_datagrams_per_message": 1,
+  "attack_messages_sent": 32833,
+  "attack_rate_achieved_per_s": 992.0652962102222,
+  "attempted": 30,
+  "latency_ms_max": 3.832,
+  "latency_ms_mean": 1.9327500000000004,
+  "latency_ms_min": 1.466,
+  "latency_ms_p50": 1.719,
+  "latency_ms_p95": 2.435,
+  "latency_ms_p99": 2.807,
+  "per_second": 0.7251723763261974,
+  "phase": "legit-probe-under-frag1",
+  "succeeded": 24,
+  "success_rate_pct": 80,
+  "wall_s": 33.095579456
+}

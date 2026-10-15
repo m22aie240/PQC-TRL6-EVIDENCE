@@ -1,0 +1,180 @@
+2026-10-11T08:15:55.723Z  PHASE 3 start
+2026-10-11T08:15:57.471Z  c1 addr 10.8.0.2
+2026-10-11T08:15:57.484Z  --- M1: client address change on the same bearer (172.30.1.11 -> 172.30.9.99) under live voice
+2026-10-11T08:16:13.002Z  EVENT M1 change
+2026-10-11T08:16:42.061Z  --- M2: bearer switch eth0 (172.30/16) -> lte (172.31/16, different gateway interface) under live voice
+2026-10-11T08:16:57.575Z  EVENT M2 change
+2026-10-11T08:17:26.597Z  --- M3: bearer switch back lte -> eth0 (new address 172.30.1.11) under live voice
+2026-10-11T08:17:42.105Z  EVENT M3 change
+2026-10-11T08:18:14.136Z  --- I1: bearer interruption 5s (c1 eth0 down) under live voice
+2026-10-11T08:18:29.645Z  EVENT I1 down
+2026-10-11T08:18:34.656Z  EVENT I1 up
+2026-10-11T08:19:33.673Z  --- I2: bearer interruption 30s (c1 eth0 down) under live voice
+2026-10-11T08:19:49.182Z  EVENT I2 down
+2026-10-11T08:20:19.192Z  EVENT I2 up
+2026-10-11T08:21:18.209Z  --- I3: bearer interruption 200s (c1 eth0 down) under live voice
+2026-10-11T08:21:33.718Z  EVENT I3 down
+2026-10-11T08:24:53.728Z  EVENT I3 up
+2026-10-11T08:25:52.748Z  --- G1: gateway process restart (kill -9, restart after 2 s) under live voice
+2026-10-11T08:26:08.258Z  EVENT G1 down
+2026-10-11T08:26:10.273Z  EVENT G1 up
+2026-10-11T08:26:58.322Z  --- analysis
+{
+  "M1": {
+    "up": {
+      "interruption_gap_ms": 20.8,
+      "recovery_after_restore_ms": 15.8,
+      "lost_packets": 0,
+      "loss_pct": 0.0,
+      "max_gap_ms": 42.004
+    },
+    "down": {
+      "interruption_gap_ms": 40.0,
+      "recovery_after_restore_ms": 35.7,
+      "lost_packets": 1,
+      "loss_pct": 0.05,
+      "max_gap_ms": 40.014
+    }
+  },
+  "M2": {
+    "up": {
+      "interruption_gap_ms": 20.2,
+      "recovery_after_restore_ms": 1.0,
+      "lost_packets": 0,
+      "loss_pct": 0.0,
+      "max_gap_ms": 49.631
+    },
+    "down": {
+      "interruption_gap_ms": 39.9,
+      "recovery_after_restore_ms": 29.1,
+      "lost_packets": 1,
+      "loss_pct": 0.05,
+      "max_gap_ms": 51.092
+    }
+  },
+  "M3": {
+    "up": {
+      "interruption_gap_ms": 20.1,
+      "recovery_after_restore_ms": 8.3,
+      "lost_packets": 0,
+      "loss_pct": 0.0,
+      "max_gap_ms": 36.001
+    },
+    "down": {
+      "interruption_gap_ms": 20.0,
+      "recovery_after_restore_ms": 9.0,
+      "lost_packets": 0,
+      "loss_pct": 0.0,
+      "max_gap_ms": 40.308
+    }
+  },
+  "I1": {
+    "up": {
+      "interruption_gap_ms": 5040.2,
+      "recovery_after_restore_ms": 11.8,
+      "lost_packets": 218,
+      "loss_pct": 5.8133,
+      "max_gap_ms": 5020.153
+    },
+    "down": {
+      "interruption_gap_ms": 6720.1,
+      "recovery_after_restore_ms": 1693.1,
+      "lost_packets": 334,
+      "loss_pct": 8.9067,
+      "max_gap_ms": 6700.036
+    },
+    "outage_imposed_ms": 5010.7
+  },
+  "I2": {
+    "up": {
+      "interruption_gap_ms": 30040.3,
+      "recovery_after_restore_ms": 15.2,
+      "lost_packets": 1468,
+      "loss_pct": 29.36,
+      "max_gap_ms": 30020.399
+    },
+    "down": {
+      "interruption_gap_ms": 31180.1,
+      "recovery_after_restore_ms": 1156.2,
+      "lost_packets": 1558,
+      "loss_pct": 31.16,
+      "max_gap_ms": 31180.117
+    },
+    "outage_imposed_ms": 30009.9
+  },
+  "I3": {
+    "up": {
+      "interruption_gap_ms": 200243.0,
+      "recovery_after_restore_ms": 226.6,
+      "lost_packets": 9980,
+      "loss_pct": 73.9259,
+      "max_gap_ms": 200243.029
+    },
+    "down": {
+      "interruption_gap_ms": 200243.4,
+      "recovery_after_restore_ms": 227.0,
+      "lost_packets": 9980,
+      "loss_pct": 73.9259,
+      "max_gap_ms": 200243.385
+    },
+    "outage_imposed_ms": 200010.5
+  },
+  "G1": {
+    "up": {
+      "interruption_gap_ms": null,
+      "recovery_after_restore_ms": null,
+      "lost_packets": 2250,
+      "loss_pct": 75.0,
+      "max_gap_ms": 33.24
+    },
+    "down": {
+      "interruption_gap_ms": null,
+      "recovery_after_restore_ms": null,
+      "lost_packets": 2250,
+      "loss_pct": 75.0,
+      "max_gap_ms": 25.12
+    },
+    "outage_imposed_ms": 2014.8
+  }
+}
+    time=2026-10-11T13:54:14.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:15.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:16.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:17.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:18.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:19.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:20.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:21.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:22.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:23.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:24.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:25.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:26.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:27.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:28.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:29.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:30.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:31.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:32.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:33.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:34.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:35.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:36.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:37.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:38.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:39.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:40.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:41.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:42.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:43.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:44.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:45.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:46.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:47.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:48.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:49.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:50.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:51.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:52.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+    time=2026-10-11T13:54:53.336+05:30 level=INFO msg="rekeying: fresh ephemeral X25519 and ML-KEM-768 keys" peer=server
+2026-10-11T08:26:58.409Z  PHASE 3 done

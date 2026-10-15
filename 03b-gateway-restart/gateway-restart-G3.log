@@ -1,0 +1,1337 @@
+time=2026-10-11T14:04:28.510+05:30 level=INFO msg="pqcvpn server: key exchange X25519 + ML-KEM-768 (Kyber), hybrid; identity ML-DSA-65 (Dilithium); transport ChaCha20-Poly1305; transcript SHA-256"
+time=2026-10-11T14:04:28.510+05:30 level=INFO msg="loaded configuration" path=/home/claude/bench/keys/server.conf mode=server identity="rjzxMEQ1guDOYPqwvFMMR0mCpKOgcbp+xIagmxVXpd4=" tenants=1 peers=3
+time=2026-10-11T14:04:28.511+05:30 level=INFO msg="post-quantum VPN starting" mode=server listen=0.0.0.0:51820 suite="pqcvpn v1 X25519+MLKEM768 ChaChaPoly SHA256 MLDSA65" key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" identity_signature="ML-DSA-65 (Dilithium)" transport_cipher=ChaCha20-Poly1305 fingerprint="rjzxMEQ1guDOYPqwvFMMR0mCpKOgcbp+xIagmxVXpd4=" pq_peer_auth_required=true peers=3
+time=2026-10-11T14:04:28.511+05:30 level=INFO msg=running device=pqc0 mtu=1420 overhead=32
+time=2026-10-11T14:04:28.516+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.736+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:28.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:28.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.981+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.981+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:29.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:29.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.178+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.337+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.337+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.856+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:30.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:30.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.019+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.356+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.656+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.779+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.779+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:31.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:31.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:32.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:32.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:33.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:33.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:34.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:34.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.097+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.737+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.737+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:35.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:35.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.818+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:36.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:36.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.077+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.077+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.596+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.736+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:37.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:37.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.137+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.556+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.816+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.836+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:38.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:38.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.217+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.217+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.236+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.297+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:39.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:39.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.356+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.775+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.776+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.795+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.796+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.815+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.816+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.835+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.836+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.855+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.856+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.875+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.876+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.895+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.896+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.915+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.916+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.935+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.936+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.955+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.956+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.975+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.976+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:40.995+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:40.996+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.015+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.016+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.035+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.036+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.055+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.056+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.075+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.076+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.095+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.096+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.115+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.116+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.135+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.136+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.155+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.156+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.175+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.176+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.195+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.196+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.215+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.216+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.235+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.236+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.255+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.256+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.275+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.276+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.295+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.296+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.315+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.316+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.335+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.336+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.355+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.357+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.375+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.376+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.395+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.396+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.415+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.416+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.435+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.436+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.455+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.456+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.475+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.476+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.495+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.496+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.515+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.516+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.535+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.536+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.555+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.556+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.575+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.576+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.595+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.596+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.615+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.616+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.635+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.636+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.655+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.656+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.675+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.676+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.695+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.696+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.715+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.716+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.735+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.736+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.755+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.756+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.777+05:30 level=DEBUG msg="no route for packet" dst=10.8.0.2
+time=2026-10-11T14:04:41.777+05:30 level=DEBUG msg="transport packet for unknown session" index=3463833630 src=172.30.1.11:57110
+time=2026-10-11T14:04:41.781+05:30 level=INFO msg="handshake complete (responder)" peer=c1 endpoint=172.30.1.11:57110 address=10.8.0.2/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:04:41.783+05:30 level=DEBUG msg="peer announced candidates" peer=c1 local=[172.30.1.11:57110] p2p=false
+time=2026-10-11T14:06:42.782+05:30 level=INFO msg="handshake complete (responder)" peer=c1 endpoint=172.30.1.11:57110 address=10.8.0.2/16 key_exchange="X25519 + ML-KEM-768 (Kyber), hybrid" peer_identity="ML-DSA-65 (Dilithium) verified" transport_cipher=ChaCha20-Poly1305
+time=2026-10-11T14:06:42.784+05:30 level=DEBUG msg="peer announced candidates" peer=c1 local=[172.30.1.11:57110] p2p=false
+/home/claude/bench/tools/lib.sh: line 15:  8807 Killed                  ip netns exec "$ns" "$@"
